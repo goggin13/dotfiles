@@ -9,6 +9,7 @@ alias ..="cd .."
 alias cs="cd $CS"
 alias bnter="cd $BNTER"
 alias fchat="cd $FCHAT"
+alias wipeout="git reset --hard HEAD; git pull"
 alias m="mate ."
 
 # Alias management
@@ -28,5 +29,6 @@ function take {
 
 # Usage ~: gg all this will be a commit message
 function gg () {
-	git commit -v -a -m "$*"
+	git commit -m "$*"
+	git push
 }
