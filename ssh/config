@@ -2,3 +2,7 @@ Host myserver
   HostName myserver.example.com
   User myuser
   Port 2233
+
+Host play_staging
+  HostName 173.246.101.127
+  User play
