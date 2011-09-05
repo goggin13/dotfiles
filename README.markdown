@@ -28,4 +28,4 @@ fi`
   * `chmod 755 ~/bin/vcprompt`
 
 ## Git
-* `git --reset hard HEAD`
+* `git reset --hard HEAD`
