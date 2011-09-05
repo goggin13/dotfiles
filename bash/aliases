@@ -1,0 +1,25 @@
+ 
+alias clojure="java -cp /Users/mattgoggin/Library/Clojure/clojure.jar clojure.main"
+
+# Navigation
+alias ..="cd .."
+
+# Alias management
+alias reload="source ~/.bashrc"
+
+# Processes
+alias tu='top -o cpu' # cpu
+alias tm='top -o vsize' # memory
+
+# Git
+alias g='git status'
+
+function take {
+	mkdir $1
+	cd $1
+}
+
+# Usage ~: gg all this will be a commit message
+function gg () {
+	git commit -v -a -m "$*"
+}
