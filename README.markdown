@@ -23,6 +23,8 @@ then
 	. ~/.bashrc
 fi`
 * `ln -s ~/bin/dotfiles/ssh/config ~/.ssh/config`
-
+* download vcprompt
+  `curl -sL https://github.com/djl/vcprompt/raw/master/bin/vcprompt > ~/bin/vcprompt`
+  `chmod 755 ~/bin/vcprompt`
 ## Git
 * `git --reset hard HEAD`
