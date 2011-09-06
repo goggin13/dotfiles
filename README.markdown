@@ -30,4 +30,5 @@ fi`
   * `chmod 755 ~/bin/vcprompt`
 
 ## Git
-* `git reset --hard HEAD`
+* `git reset --hard HEAD`      git pull and overwrite
+* `git rm --cached test.txt`   delete but leave on file system
