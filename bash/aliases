@@ -20,10 +20,12 @@ alias tm='top -o vsize' # memory
 
 # Git
 alias g='git status'
+alias gaa='git add -A'
 alias gp='git pull'
 alias gsp='git stash; git pull; git stash pop'
 alias gpu='git push'
 alias wipeout="git reset --hard HEAD; git pull"
+
 
 # Usage ~: gg all this will be a commit message
 function gg () {

@@ -4,7 +4,7 @@ Host myserver
   Port 2233
 
 Host play_staging
-  HostName 173.246.101.127
+  HostName 173.246.101.145
   User play
 
 Host play_master
