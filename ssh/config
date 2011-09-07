@@ -7,6 +7,11 @@ Host play_staging
   HostName 173.246.101.127
   User play
 
+Host play_master
+  HostName 173.246.100.79	
+  User play
+
 Host bnter_staging
 	HostName 174.122.66.106
 	User root
+	

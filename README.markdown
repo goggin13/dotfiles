@@ -31,3 +31,7 @@ fi`
 
 ## Git
 * `git reset --hard HEAD`
+
+## File downloads
+* download from remote server
+  * `scp play@173.246.100.79:/home/play/backup/current/mysql-dump.gz mysql-dump.gz`

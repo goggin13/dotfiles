@@ -9,7 +9,6 @@ alias ..="cd .."
 alias cs="cd $CS"
 alias bnter="cd $BNTER"
 alias fchat="cd $FCHAT"
-alias wipeout="git reset --hard HEAD; git pull"
 alias m="mate ."
 
 # Alias management
@@ -21,14 +20,32 @@ alias tm='top -o vsize' # memory
 
 # Git
 alias g='git status'
-
-function take {
-	mkdir $1
-	cd $1
-}
+alias gp='git pull'
+alias gsp='git stash; git pull; git stash pop'
+alias gpu='git push'
+alias wipeout="git reset --hard HEAD; git pull"
 
 # Usage ~: gg all this will be a commit message
 function gg () {
 	git commit -m "$*"
 	git push
 }
+
+function gd () {
+	git diff $1
+}
+
+function ga () {
+	git add $1
+}
+
+function gacp () {
+	ga $1
+	gg $2
+}
+
+function take {
+	mkdir $1
+	cd $1
+}
+
