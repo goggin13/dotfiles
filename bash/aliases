@@ -41,6 +41,14 @@ function ga () {
 	git add $1
 }
 
+function gco () {
+	git checkout $1
+}
+
+function gp () {
+	git pull $1
+}
+
 function gacp () {
 	ga $1
 	gg $2
