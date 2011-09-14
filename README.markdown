@@ -17,8 +17,7 @@ Some helpful commands that I want to write down because I'm always looking them 
 * `pushd`, `popd` cd to directory and push it onto a stack; use `popd` to revist the stack of directories
 
 ## Used to set up this environment
-* in ~/.bashrc
-`. ~/bin/dotfiles/bashrc`
+* in ~/.bashrc `. ~/bin/dotfiles/bashrc`
 * in ~/.bash_profile
 `if [ -f ~/.bashrc ];
 then
@@ -43,6 +42,6 @@ fi`
 * run a script against a DB
   * `mysql -u root -pPASSWORD -h localhost bnter_latest < ~/Desktop/bnter_staging.sql`
 * shut it down
-  * `mysqladmin -u root -p shutdown`
+  * `mysqladmin -u root -pPASSWORD shutdown`
 * dump a table to file
-  * `mysqldump -c -u root -proot bnter_latest conversations > ~/Desktop/conversations.sql`
+  * `mysqldump -c -u root -pPASSWORD database table > ~/Desktop/dump.sql`
