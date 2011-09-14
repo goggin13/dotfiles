@@ -38,3 +38,11 @@ fi`
 ## File downloads
 * download from remote server
   * `scp play@173.246.100.79:/home/play/backup/current/mysql-dump.gz mysql-dump.gz`
+
+## MySQL
+* run a script against a DB
+  * `mysql -u root -pPASSWORD -h localhost bnter_latest < ~/Desktop/bnter_staging.sql`
+* shut it down
+  * `mysqladmin -u root -p shutdown`
+* dump a table to file
+  * `mysqldump -c -u root -proot bnter_latest conversations > ~/Desktop/conversations.sql`
