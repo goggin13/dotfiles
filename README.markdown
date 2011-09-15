@@ -30,7 +30,7 @@ fi`
 
 ## Git
 * git pull and overwrite
-  * `git reset --hard HEAD`
+  * `git reset --hard HEAD; git pull`
 * delete but leave on file system
   * `git rm --cached test.txt`   
 
