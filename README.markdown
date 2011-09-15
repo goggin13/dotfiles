@@ -37,7 +37,7 @@ fi`
 ## Files
 * download from remote server
   * `scp play@173.246.100.79:/home/play/backup/current/mysql-dump.gz mysql-dump.gz`
-* bulk rename examples [sed tutorial](http://www.grymoire.com/Unix/Sed.html#uh-4)
+* bulk rename examples ([sed tutorial](http://www.grymoire.com/Unix/Sed.html#uh-4))
   * `for f in fgh*; do mv $f $(echo $f | sed 's/fgh/jkl/g'); done`
   * `for f in *; do mv $f $(echo $f | sed 's/2/1/g'); done`
   * `for f in *; do mv $f $(echo $f | sed 's/hair/girlhair/g'); done`
