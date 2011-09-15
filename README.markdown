@@ -34,9 +34,15 @@ fi`
 * delete but leave on file system
   * `git rm --cached test.txt`   
 
-## File downloads
+## Files
 * download from remote server
   * `scp play@173.246.100.79:/home/play/backup/current/mysql-dump.gz mysql-dump.gz`
+* bulk rename examples [sed tutorial][http://www.grymoire.com/Unix/Sed.html#uh-4]
+  * `for f in fgh*; do mv $f $(echo $f | sed 's/fgh/jkl/g'); done`
+  * `for f in *; do mv $f $(echo $f | sed 's/2/1/g'); done`
+  * `for f in *; do mv $f $(echo $f | sed 's/hair/girlhair/g'); done`
+  * `for f in *; do mv $f $(echo $f | sed 's/male/female/g'); done`
+  * `for f in *; do mv $f $(echo $f | sed 's/female_\(.*\)_/&_female_/g'); done`
 
 ## MySQL
 * run a script against a DB
@@ -45,3 +51,7 @@ fi`
   * `mysqladmin -u root -pPASSWORD shutdown`
 * dump a table to file
   * `mysqldump -c -u root -pPASSWORD database table > ~/Desktop/dump.sql`
+
+## OSX
+* flush DNS cache
+  * `dscacheutil -flushcache`
