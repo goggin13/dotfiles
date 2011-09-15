@@ -20,7 +20,9 @@ Some helpful commands that I want to write down because I'm always looking them 
 * git pull and overwrite
   * `git reset --hard HEAD; git pull`
 * delete but leave on file system
-  * `git rm --cached test.txt`   
+  * `git rm --cached test.txt`  
+* delete a remote branch
+  * `git push origin :branch_name` 
 
 ## Files
 * download from remote server
