@@ -16,18 +16,6 @@ Some helpful commands that I want to write down because I'm always looking them 
 * `cd -` go to previous directory
 * `pushd`, `popd` cd to directory and push it onto a stack; use `popd` to revist the stack of directories
 
-## Used to set up this environment
-* in ~/.bashrc `. ~/bin/dotfiles/bashrc`
-* in ~/.bash_profile
-`if [ -f ~/.bashrc ];
-then
-	. ~/.bashrc
-fi`
-* `ln -s ~/bin/dotfiles/ssh/config ~/.ssh/config`
-* download vcprompt
-  * `curl -sL https://github.com/djl/vcprompt/raw/master/bin/vcprompt > ~/bin/vcprompt`
-  * `chmod 755 ~/bin/vcprompt`
-
 ## Git
 * git pull and overwrite
   * `git reset --hard HEAD; git pull`
@@ -55,3 +43,23 @@ fi`
 ## OSX
 * flush DNS cache
   * `dscacheutil -flushcache`
+
+## Coffee
+* Compile a directory tree of .coffee files into a parallel tree of .js, in lib:
+  * `coffee -o lib/ -c src/`
+* Watch a file for changes, and recompile it every time the file is saved:
+  * `coffee --watch --compile experimental.coffee`
+* Concatenate a list of files into a single script:
+  * `coffee --join project.js --compile src/*.coffee`
+
+## Used to set up this environment
+* in ~/.bashrc `. ~/bin/dotfiles/bashrc`
+* in ~/.bash_profile
+`if [ -f ~/.bashrc ];
+then
+	. ~/.bashrc
+fi`
+* `ln -s ~/bin/dotfiles/ssh/config ~/.ssh/config`
+* download vcprompt
+  * `curl -sL https://github.com/djl/vcprompt/raw/master/bin/vcprompt > ~/bin/vcprompt`
+  * `chmod 755 ~/bin/vcprompt`
