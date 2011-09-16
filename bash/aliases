@@ -10,6 +10,7 @@ alias cs="cd $CS"
 alias bnter="cd $BNTER"
 alias fchat="cd $FCHAT"
 alias m="mate ."
+alias h="history"
 
 # Alias management
 alias reload="source ~/.bashrc"
