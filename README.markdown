@@ -23,6 +23,9 @@ Some helpful commands that I want to write down because I'm always looking them 
   * `git rm --cached test.txt`  
 * delete a remote branch
   * `git push origin :branch_name` 
+* resolve conflicts all me or all them
+  * `git checkout --ours index.html`
+  * `git checkout --theirs index.html` 
 
 ## Files
 * download from remote server
