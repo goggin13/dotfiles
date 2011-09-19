@@ -44,3 +44,4 @@ BWHITE='\e[47m'
 PS1="\u:\w \[$MAGENTA\]\$(vcprompt)\[$NO_COLOR\] \n\[$EYELLOW\];-)\[$NO_COLOR\] "
 
 
+[[ -s "$HOME/.rvm/scripts/rvm" ]] && . "$HOME/.rvm/scripts/rvm"  # This loads RVM into a shell session.
