@@ -1,4 +1,4 @@
-. ~/bin/dotfiles/bash/env_bnter_imac
+. ~/bin/dotfiles/bash/env_macbook
 . ~/bin/dotfiles/bash/config
 . ~/bin/dotfiles/bash/aliases
 

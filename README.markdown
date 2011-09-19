@@ -68,3 +68,22 @@ fi`
 * download vcprompt
   * `curl -sL https://github.com/djl/vcprompt/raw/master/bin/vcprompt > ~/bin/vcprompt`
   * `chmod 755 ~/bin/vcprompt`
+
+## Git
+* git pull and overwrite
+  * `git reset --hard HEAD`
+* delete but leave on file system
+  * `git rm --cached test.txt`   
+
+## File downloads
+* download from remote server
+  * `scp play@173.246.100.79:/home/play/backup/current/mysql-dump.gz mysql-dump.gz`
+
+## Rails
+* bin/spork
+* rails console --sandbox
+* rails generate migration add_salt_to_users salt:string
+* bin/rake db:migrate
+* bin/rake db:test:prepare
+* rails generate scaffold User name:string email:string
+* bin/annotate --position before
