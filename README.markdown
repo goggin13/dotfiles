@@ -54,6 +54,8 @@ Some helpful commands that I want to write down because I'm always looking them 
   * `coffee -o lib/ -c src/`
 * Watch a file for changes, and recompile it every time the file is saved:
   * `coffee --watch --compile experimental.coffee`
+* Combine the previous 2
+  * `coffee --watch -o coffee_js/ -c coffee/`
 * Concatenate a list of files into a single script:
   * `coffee --join project.js --compile src/*.coffee`
 
