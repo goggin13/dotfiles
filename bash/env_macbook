@@ -8,7 +8,7 @@ export PATH=$PATH:/Users/mattgoggin/Library/godi/bin
 export PATH=$PATH:/Users/mattgoggin/Library/godi/sbin
 export PATH=$PATH:/Users/mattgoggin/.local/bin
 export PATH=$PATH:/Users/mattgoggin/gtk/source/gtk+-2.24.0/gtk
-export PATH=$PATH:/users/mattgoggin/Library/play
+export PATH=$PATH:/users/mattgoggin/Library/play-1.2.3
 export PATH=$PATH:/opt/local/bin:/opt/local/sbin
 
 export SCALA_HOME=/opt/local/share/scala-2.9
@@ -24,3 +24,6 @@ export PYTHONPATH=/Library/Frameworks/Python.framework/Versions/2.5/lib/python2.
 export EVENT_NOKQUEUE=1
 export CS=/Users/mattgoggin/Desktop/CS
 export BNTER=/Applications/MAMP/htdocs/bnter
+
+# This loads RVM into a shell session.
+[[ -s "/Users/mattgoggin/.rvm/scripts/rvm" ]] && source "/Users/mattgoggin/.rvm/scripts/rvm" 
