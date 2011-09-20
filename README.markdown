@@ -26,6 +26,8 @@ Some helpful commands that I want to write down because I'm always looking them 
 * resolve conflicts all me or all them
   * `git checkout --ours index.html`
   * `git checkout --theirs index.html` 
+* checkout a remote branch 
+  * git checkout -b new_branch origin/new_branch
 
 ## Files
 * download from remote server
