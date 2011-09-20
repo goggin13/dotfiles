@@ -27,8 +27,9 @@ Some helpful commands that I want to write down because I'm always looking them 
   * `git checkout --ours index.html`
   * `git checkout --theirs index.html` 
 * checkout a remote branch 
-  * git checkout -b new_branch origin/new_branch
-
+  * `git checkout -b new_branch origin/new_branch`
+* pull and merge all changes with the remote copy [SO](http://stackoverflow.com/questions/3438311/how-can-i-git-pull-rebase-but-taking-all-remote-changes)
+  * `git pull -s recursive -X theirs`
 ## Files
 * download from remote server
   * `scp play@173.246.100.79:/home/play/backup/current/mysql-dump.gz mysql-dump.gz`
