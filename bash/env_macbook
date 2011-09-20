@@ -24,6 +24,7 @@ export PYTHONPATH=/Library/Frameworks/Python.framework/Versions/2.5/lib/python2.
 export EVENT_NOKQUEUE=1
 export CS=/Users/mattgoggin/Desktop/CS
 export BNTER=/Applications/MAMP/htdocs/bnter
+export DOTFILES=~/bin/dotfiles
 
 # This loads RVM into a shell session.
 [[ -s "/Users/mattgoggin/.rvm/scripts/rvm" ]] && source "/Users/mattgoggin/.rvm/scripts/rvm" 

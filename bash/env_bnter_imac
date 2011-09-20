@@ -6,5 +6,5 @@ export PATH=$PATH:/opt/local/bin:/opt/local/sbin
 
 export CS=/Users/goggin/Documents/CS
 export FCHAT=/Library/WebServer/Documents/fchat
-
+export DOTFILES=~/bin/dotfiles
 
