@@ -72,13 +72,7 @@ fi`
 * `ln -s ~/bin/dotfiles/ssh/config ~/.ssh/config`
 * download vcprompt
   * `curl -sL https://github.com/djl/vcprompt/raw/master/bin/vcprompt > ~/bin/vcprompt`
-  * `chmod 755 ~/bin/vcprompt`
-
-## Git
-* git pull and overwrite
-  * `git reset --hard HEAD`
-* delete but leave on file system
-  * `git rm --cached test.txt`   
+  * `chmod 755 ~/bin/vcprompt
 
 ## File downloads
 * download from remote server

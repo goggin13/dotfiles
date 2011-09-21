@@ -1,8 +1,8 @@
 
-# installs
+# Applications
 alias clojure="java -cp /Users/mattgoggin/Library/Clojure/clojure.jar clojure.main"
 alias js="java -cp /Users/goggin/Documents/CS/rhino/js.jar:/Users/goggin/Documents/CS/rhino/jline.jar jline.ConsoleRunner org.mozilla.javascript.tools.shell.Main -opt -1"
-alias dj="django-admin.py"
+alias watch_bnter="cd $BNTER/web/assets/js; coffee --watch -o coffee_js/ -c coffee/"
 
 # Navigation
 alias ..="cd .."
@@ -12,7 +12,8 @@ alias fchat="cd $FCHAT"
 alias dot="cd $DOTFILES"
 alias m="mate ."
 alias h="history"
-alias watch_bnter="cd $BNTER/web/assets/js; coffee --watch -o coffee_js/ -c coffee/"
+alias o="open ."
+
 
 # Alias management
 alias reload="source ~/.bashrc"
