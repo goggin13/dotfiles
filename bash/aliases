@@ -2,6 +2,8 @@
 # Applications
 alias clojure="java -cp /Users/mattgoggin/Library/Clojure/clojure.jar clojure.main"
 alias js="java -cp /Users/goggin/Documents/CS/rhino/js.jar:/Users/goggin/Documents/CS/rhino/jline.jar jline.ConsoleRunner org.mozilla.javascript.tools.shell.Main -opt -1"
+alias watch_bnter_r="cd $CS/rails_projects/bnter_rails/public/javascripts; coffee --watch -o coffee_js/ -c coffee/"
+alias watch_bnter_t="cd $CS/rails_projects/bnter_rails/spec/; coffee --watch -c javascripts/"
 alias watch_bnter="cd $BNTER/web/assets/js; coffee --watch -o coffee_js/ -c coffee/"
 
 # Navigation

@@ -83,8 +83,9 @@ fi`
 ## Rails
 * bin/spork
 * rails console --sandbox
-* rails generate migration add_salt_to_users salt:string
 * bin/rake db:migrate
 * bin/rake db:test:prepare
 * rails generate scaffold User name:string email:string
 * bin/annotate --position before
+* rails generate migration addUsernameAndLast_nameToser username:string last_name:string
+* bundle update
