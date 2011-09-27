@@ -10,6 +10,7 @@ alias watch_bnter="cd $BNTER/web/assets/js; coffee --watch -o coffee_js/ -c coff
 alias ..="cd .."
 alias cs="cd $CS"
 alias bnter="cd $BNTER"
+alias bnterr="cd $BNTERR"
 alias fchat="cd $FCHAT"
 alias dot="cd $DOTFILES"
 alias m="mate ."
