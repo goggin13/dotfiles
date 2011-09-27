@@ -89,3 +89,4 @@ fi`
 * bin/annotate --position before
 * rails generate migration addUsernameAndLast_nameToser username:string last_name:string
 * bundle update
+* bin/rake jasmine
