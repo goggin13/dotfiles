@@ -20,7 +20,7 @@ alias ppd="popd"
 
 # Alias management
 alias reload="source ~/.bashrc"
-alias pushdot="sudo git add -A; sudo git commit -m 'update dotfiles'; sudo git push origin master"
+alias pushdot="sudo git add -A; sudo git commit -m 'update dotfiles'; sudo git pull; sudo git push origin master"
 
 # Processes
 alias tu='top -o cpu' # cpu
