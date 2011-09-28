@@ -30,6 +30,10 @@ Some helpful commands that I want to write down because I'm always looking them 
   * `git checkout -b new_branch origin/new_branch`
 * pull and merge all changes with the remote copy ([SO](http://stackoverflow.com/questions/3438311/how-can-i-git-pull-rebase-but-taking-all-remote-changes))
   * `git pull -s recursive -X theirs`
+* view history and then rollback to an older commit
+  * `git log`
+  * `git reset --hard SHA1_HASH`
+
 ## Files
 * download from remote server
   * `scp play@173.246.100.79:/home/play/backup/current/mysql-dump.gz mysql-dump.gz`
@@ -83,8 +87,10 @@ fi`
 ## Rails
 * bin/spork
 * rails console --sandbox
-* rails generate migration add_salt_to_users salt:string
 * bin/rake db:migrate
 * bin/rake db:test:prepare
 * rails generate scaffold User name:string email:string
 * bin/annotate --position before
+* rails generate migration addUsernameAndLast_nameToser username:string last_name:string
+* bundle update
+* bin/rake jasmine JASMINE_PORT=9000
