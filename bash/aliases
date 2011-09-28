@@ -13,19 +13,24 @@ alias dot="cd $DOTFILES"
 alias m="mate ."
 alias h="history"
 alias o="open ."
-
+alias ppd="popd"
 
 # Alias management
 alias reload="source ~/.bashrc"
+alias push_dot="sudo git add -A; sudo git commit -m 'update dotfiles'"
 
 # Processes
 alias tu='top -o cpu' # cpu
 alias tm='top -o vsize' # memory
 
 # Git
-alias g='git status'
+alias g='clear; git status'
 alias gaa='git add -A'
 alias wipeout="git reset --hard HEAD; git pull"
+
+function pd () {
+	pushd $1
+}
 
 function gd () {
 	git diff $1
