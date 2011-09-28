@@ -93,4 +93,4 @@ fi`
 * bin/annotate --position before
 * rails generate migration addUsernameAndLast_nameToser username:string last_name:string
 * bundle update
-* bin/rake jasmine
+* bin/rake jasmine JASMINE_PORT=9000
