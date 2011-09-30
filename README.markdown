@@ -33,6 +33,8 @@ Some helpful commands that I want to write down because I'm always looking them 
 * view history and then rollback to an older commit
   * `git log`
   * `git reset --hard SHA1_HASH`
+* Add remote
+  * `git remote add origin git@github.com:patrickmoberg/pyagg.git` 
 
 ## Files
 * download from remote server
