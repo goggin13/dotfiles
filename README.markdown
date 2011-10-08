@@ -73,14 +73,16 @@ Some helpful commands that I want to write down because I'm always looking them 
 ## Used to set up this environment
 * in ~/.bashrc `. ~/bin/dotfiles/bashrc`
 * in ~/.bash_profile
-`if [ -f ~/.bashrc ];
+```basg
+if [ -f ~/.bashrc ];
 then
 	. ~/.bashrc
-fi`
+fi
+```
 * `ln -s ~/bin/dotfiles/ssh/config ~/.ssh/config`
 * download vcprompt
   * `curl -sL https://github.com/djl/vcprompt/raw/master/bin/vcprompt > ~/bin/vcprompt`
-  * `chmod 755 ~/bin/vcprompt
+  * `chmod 755 ~/bin/vcprompt`
 
 ## File downloads
 * download from remote server
