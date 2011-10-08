@@ -73,7 +73,7 @@ Some helpful commands that I want to write down because I'm always looking them 
 ## Used to set up this environment
 * in ~/.bashrc `. ~/bin/dotfiles/bashrc`
 * in ~/.bash_profile
-```basg
+```bash
 if [ -f ~/.bashrc ];
 then
 	. ~/.bashrc
