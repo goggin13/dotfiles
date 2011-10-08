@@ -73,11 +73,11 @@ Some helpful commands that I want to write down because I'm always looking them 
 ## Used to set up this environment
 * in ~/.bashrc `. ~/bin/dotfiles/bashrc`
 * in ~/.bash_profile
-```bash
-if [ -f ~/.bashrc ];
-then
-	. ~/.bashrc
-fi
+* 
+```bash  
+if [ -f ~/.bashrc ];   
+then . ~/.bashrc  
+fi  
 ```
 * `ln -s ~/bin/dotfiles/ssh/config ~/.ssh/config`
 * download vcprompt
