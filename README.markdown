@@ -56,7 +56,7 @@ Some helpful commands that I want to write down because I'm always looking them 
 * dump database ignoring some tables
   * `mysqldump -c -u root -pPASS --database bnter_latest --ignore-table=bnter_latest.filedata --ignore-table=bnter_latest.files > ~/Desktop/bnter.sql`
 * put logs to table (will reset on server restart)
-  * ```SET GLOBAL general_log = 'ON'; SET GLOBAL log_output = 'TABLE'; SELECT * FROM mysql.general_log; ```
+  * ```SET GLOBAL general_log = 'ON'; SET GLOBAL log_output = 'TABLE'; SELECT * FROM mysql.general_log ORDER BY event_time DESC; ```
 
 ## OSX
 * flush DNS cache
