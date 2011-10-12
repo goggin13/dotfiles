@@ -58,9 +58,9 @@ Some helpful commands that I want to write down because I'm always looking them 
 * put logs to table
   *   
 ```sql
-SET GLOBAL general_log = 'ON';
-SET GLOBAL log_output = 'TABLE';
-SELECT * FROM mysql.general_log ;
+SET GLOBAL general_log = 'ON';  
+SET GLOBAL log_output = 'TABLE';  
+SELECT * FROM mysql.general_log ;  
 ```
 
 ## OSX
