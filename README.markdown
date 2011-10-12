@@ -35,6 +35,8 @@ Some helpful commands that I want to write down because I'm always looking them 
   * `git reset --hard SHA1_HASH`
 * Add remote
   * `git remote add origin git@github.com:patrickmoberg/pyagg.git` 
+* Checkout a specific commit on a new branch
+  * `git checkout -b aNewBranch SHA1` (SHA1 = commit id)
 
 ## Files
 * download from remote server
