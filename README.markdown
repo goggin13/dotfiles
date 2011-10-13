@@ -37,6 +37,8 @@ Some helpful commands that I want to write down because I'm always looking them 
   * `git remote add origin git@github.com:patrickmoberg/pyagg.git` 
 * Checkout a specific commit on a new branch
   * `git checkout -b aNewBranch SHA1` (SHA1 = commit id)
+* Checkout a file from a different branch
+  * `git checkout <branch_you_want_to_merge_from> <file_paths...>`
 
 ## Files
 * download from remote server
