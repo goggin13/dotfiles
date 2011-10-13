@@ -6,6 +6,10 @@ alias watch_bnter_r="cd $CS/rails_projects/bnter_rails/public/javascripts; coffe
 alias watch_bnter_t="cd $CS/rails_projects/bnter_rails/spec/; coffee --watch -c javascripts/"
 alias watch_bnter="cd $BNTER/web/assets/js; coffee --watch -o coffee_js/ -c coffee/"
 
+# minify 
+alias min_bnter="python $BNTER/tests/pyagg/pyagg.py $BNTER/tests/pyagg.js"
+alias min_fchat="python $FCHAT/pyagg/pyagg.py $FCHAT/tests/pyagg.js"
+
 # Navigation
 alias ..="cd .."
 alias cs="cd $CS"
