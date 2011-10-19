@@ -5,6 +5,7 @@ export PATH=$PATH:/Users/goggin/Library/play-1.2.3;
 export PATH=$PATH:/opt/local/bin:/opt/local/sbin
 
 export CS=/Users/goggin/Documents/CS
+export BNTERR=$CS/bnter_rails
 export FCHAT=/Library/WebServer/Documents/fchat
 export SELENIUM_SERVER_JAR=~/bin/selenium-server-standalone-2.7.0.jar
 export DOTFILES=~/bin/dotfiles
