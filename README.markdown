@@ -87,10 +87,6 @@ Some helpful commands that I want to write down because I'm always looking them 
   * `curl -sL https://github.com/djl/vcprompt/raw/master/bin/vcprompt > ~/bin/vcprompt`
   * `chmod 755 ~/bin/vcprompt`
 
-## File downloads
-* download from remote server
-  * `scp play@173.246.100.79:/home/play/backup/current/mysql-dump.gz mysql-dump.gz`
-
 ## Rails
 * bin/spork
 * rails console --sandbox
