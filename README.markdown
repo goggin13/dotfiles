@@ -43,6 +43,8 @@ Some helpful commands that I want to write down because I'm always looking them 
 ## Files
 * download from remote server
   * `scp play@173.246.100.79:/home/play/backup/current/mysql-dump.gz mysql-dump.gz`
+* push to remote server
+  * scp ~/Desktop/bnter_2011_10_19.sql root@172.132.66.106:~ 
 * bulk rename examples ([sed tutorial](http://www.grymoire.com/Unix/Sed.html#uh-4))
   * `for f in fgh*; do mv $f $(echo $f | sed 's/fgh/jkl/g'); done`
   * `for f in *; do mv $f $(echo $f | sed 's/2/1/g'); done`
