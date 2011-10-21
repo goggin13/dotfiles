@@ -39,6 +39,10 @@ Some helpful commands that I want to write down because I'm always looking them 
   * `git checkout -b aNewBranch SHA1` (SHA1 = commit id)
 * Checkout a file from a different branch
   * `git checkout <branch_you_want_to_merge_from> <file_paths...>`
+* Update list of branches
+  * `git fetch`
+* checkout and track a remote branch 
+  * `git checkout -b local-name origin/remote-name`
 
 ## Files
 * download from remote server
