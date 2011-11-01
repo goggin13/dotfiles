@@ -1,7 +1,3 @@
-Host myserver
-  HostName myserver.example.com
-  User myuser
-  Port 2233
 
 Host play_staging
   HostName 173.246.101.145
@@ -12,6 +8,7 @@ Host play_master
   User play
 
 Host bnter_staging
-	HostName 174.122.66.106
-	User root
+	HostName ec2-107-22-29-61.compute-1.amazonaws.com
+	User bitnami
+	IdentityFile /Users/goggin/Documents/CS/AWS/bnter_staging.pem
 	
