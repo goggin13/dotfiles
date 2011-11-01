@@ -39,10 +39,16 @@ Some helpful commands that I want to write down because I'm always looking them 
   * `git checkout -b aNewBranch SHA1` (SHA1 = commit id)
 * Checkout a file from a different branch
   * `git checkout <branch_you_want_to_merge_from> <file_paths...>`
+* Update list of branches
+  * `git fetch`
+* checkout and track a remote branch 
+  * `git checkout -b local-name origin/remote-name`
 
 ## Files
 * download from remote server
   * `scp play@173.246.100.79:/home/play/backup/current/mysql-dump.gz mysql-dump.gz`
+* push to remote server  
+  * `scp ~/Desktop/bnter_2011_10_19.sql root@172.132.66.106:~`  
 * bulk rename examples ([sed tutorial](http://www.grymoire.com/Unix/Sed.html#uh-4))
   * `for f in fgh*; do mv $f $(echo $f | sed 's/fgh/jkl/g'); done`
   * `for f in *; do mv $f $(echo $f | sed 's/2/1/g'); done`
@@ -84,10 +90,6 @@ Some helpful commands that I want to write down because I'm always looking them 
 * download vcprompt
   * `curl -sL https://github.com/djl/vcprompt/raw/master/bin/vcprompt > ~/bin/vcprompt`
   * `chmod 755 ~/bin/vcprompt`
-
-## File downloads
-* download from remote server
-  * `scp play@173.246.100.79:/home/play/backup/current/mysql-dump.gz mysql-dump.gz`
 
 ## Rails
 * bin/spork
