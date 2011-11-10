@@ -8,7 +8,12 @@ Host play_master
   User play
 
 Host bnter_staging
-	HostName ec2-107-22-29-61.compute-1.amazonaws.com
+	HostName bnterdev.com
 	User bitnami
 	IdentityFile /Users/goggin/Documents/CS/AWS/bnter_staging.pem
+	
+Host ocaml
+	HostName ec2-107-22-102-73.compute-1.amazonaws.com
+	User ubuntu
+	IdentityFile /Users/mattgoggin/Desktop/CS/AWS/statlertime.pem
 	
