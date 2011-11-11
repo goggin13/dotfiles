@@ -82,6 +82,10 @@ Some helpful commands that I want to write down because I'm always looking them 
 * Concatenate a list of files into a single script:
   * `coffee --join project.js --compile src/*.coffee`
 
+## CURL
+* post requst
+  *  `curl -d "param1=value1&param2=value2" http://example.com/resource.cgi` 
+
 ## Used to set up this environment
 * in ~/.bashrc `. ~/bin/dotfiles/bashrc`
 * in ~/.bash_profile
