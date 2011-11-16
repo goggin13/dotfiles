@@ -43,6 +43,8 @@ Some helpful commands that I want to write down because I'm always looking them 
   * `git fetch`
 * checkout and track a remote branch 
   * `git checkout -b local-name origin/remote-name`
+* Reset a file to a specific commit
+  * `git checkout sha1hash file/to/restore`
 
 ## Files
 * download from remote server
