@@ -94,7 +94,7 @@ Some helpful commands that I want to write down because I'm always looking them 
 
 ## Used to set up this environment
 * `mkdir ~/bin; cd ~/bin`
-* `git clone
+* `git clone git@github.com:goggin13/dotfiles.git`
 * in ~/.bashrc `. ~/bin/dotfiles/bashrc`
 * in ~/.bash_profile
   * `if [ -f ~/.bashrc ]; then . ~/.bashrc fi`
