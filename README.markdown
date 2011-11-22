@@ -1,4 +1,4 @@
-# Unix Commands
+ # Unix Commands
 Some helpful commands that I want to write down because I'm always looking them up anyways
 
 ## Terminal Navigation
@@ -93,6 +93,8 @@ Some helpful commands that I want to write down because I'm always looking them 
   *  `curl -d "param1=value1&param2=value2" http://example.com/resource.cgi` 
 
 ## Used to set up this environment
+* `mkdir ~/bin; cd ~/bin`
+* `git clone git@github.com:goggin13/dotfiles.git`
 * in ~/.bashrc `. ~/bin/dotfiles/bashrc`
 * in ~/.bash_profile
   * `if [ -f ~/.bashrc ]; then . ~/.bashrc fi`
