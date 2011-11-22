@@ -43,6 +43,8 @@ Some helpful commands that I want to write down because I'm always looking them 
   * `git fetch`
 * checkout and track a remote branch 
   * `git checkout -b local-name origin/remote-name`
+* Reset a file to a specific commit
+  * `git checkout sha1hash file/to/restore`
 
 ## Files
 * download from remote server
@@ -67,6 +69,10 @@ Some helpful commands that I want to write down because I'm always looking them 
   * `mysqldump -c -u root -pPASS --database bnter_latest --ignore-table=bnter_latest.filedata --ignore-table=bnter_latest.files > ~/Desktop/bnter.sql`
 * put logs to table (will reset on server restart)
   * ```SET GLOBAL general_log = 'ON'; SET GLOBAL log_output = 'TABLE'; SELECT * FROM mysql.general_log ORDER BY event_time DESC; ```
+* change encoding
+  * mysqldump -u root -p --opt --default-character-set=latin1 --skip-set-charset  DBNAME > DBNAME.sql
+  * mysql -u root -p --default-character-set=utf8  DBNAME < DBNAME.sql
+  * see [SO post](http://stackoverflow.com/questions/346092/utf8-mysql-problems-on-rails-encoding-issues-with-utf8-general-ci)  
 
 ## OSX
 * flush DNS cache
@@ -82,6 +88,10 @@ Some helpful commands that I want to write down because I'm always looking them 
 * Concatenate a list of files into a single script:
   * `coffee --join project.js --compile src/*.coffee`
 
+## CURL
+* post requst
+  *  `curl -d "param1=value1&param2=value2" http://example.com/resource.cgi` 
+
 ## Used to set up this environment
 * in ~/.bashrc `. ~/bin/dotfiles/bashrc`
 * in ~/.bash_profile
@@ -92,12 +102,12 @@ Some helpful commands that I want to write down because I'm always looking them 
   * `chmod 755 ~/bin/vcprompt`
 
 ## Rails
-* bin/spork
-* rails console --sandbox
-* bin/rake db:migrate
-* bin/rake db:test:prepare
-* rails generate scaffold User name:string email:string
-* bin/annotate --position before
-* rails generate migration addUsernameAndLast_nameToser username:string last_name:string
-* bundle update
-* bin/rake jasmine JASMINE_PORT=9000
+* `bin/spork`
+* `rails console --sandbox`
+* `bin/rake db:migrate`
+* `bin/rake db:test:prepare`
+* `rails generate scaffold User name:string email:string`
+* `bin/annotate --position before`
+* `rails generate migration addUsernameAndLast_nameToser username:string last_name:string`
+* `bundle update`
+* `bin/rake jasmine JASMINE_PORT=9000`
