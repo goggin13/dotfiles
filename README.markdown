@@ -45,8 +45,9 @@ Some helpful commands that I want to write down because I'm always looking them 
   * `git checkout -b local-name origin/remote-name`
 * Reset a file to a specific commit
   * `git checkout sha1hash file/to/restore`
-* Show commits in one branch and not another ([SO](http://stackoverflow.com/questions/7548926/git-and-the-branch-x-is-not-fully-merged-error))
-  * `git log --graph --left-right --cherry-pick --oneline master...experiment` 
+* Show commits in one branch and not another ([SO](http://stackoverflow.com/questions/7548926/git-and-the-branch-x-is-not-fully-merged-error))  
+  * `git log --graph --left-right --cherry-pick --oneline master...experiment`   
+
 ## Files
 * download from remote server
   * `scp play@173.246.100.79:/home/play/backup/current/mysql-dump.gz mysql-dump.gz`
