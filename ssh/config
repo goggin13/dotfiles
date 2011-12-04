@@ -10,10 +10,10 @@ Host play_master
 Host bnter_staging
 	HostName bnterdev.com
 	User bitnami
-	IdentityFile /Users/goggin/Documents/CS/AWS/bnter_staging.pem
+	IdentityFile ~/Desktop/CS/AWS/bnter_staging.pem
 	
 Host ocaml
 	HostName ec2-107-22-102-73.compute-1.amazonaws.com
 	User ubuntu
-	IdentityFile /Users/mattgoggin/Desktop/CS/AWS/statlertime.pem
+	IdentityFile ~/Desktop/CS/AWS/statlertime.pem
 	
