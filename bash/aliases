@@ -2,21 +2,16 @@
 # Applications
 alias clojure="java -cp /Users/mattgoggin/Library/Clojure/clojure.jar clojure.main"
 alias js="java -cp /Users/goggin/Documents/CS/rhino/js.jar:/Users/goggin/Documents/CS/rhino/jline.jar jline.ConsoleRunner org.mozilla.javascript.tools.shell.Main -opt -1"
-alias watch_bnter_r="cd $BNTERR/public/javascripts; coffee --watch -o coffee_js/ -c coffee/"
-alias watch_bnter_t="cd $BNTERR/test/jasmine/js; coffee --watch -o coffee_js/ -c coffee/"
-alias watch_bnter="cd $BNTER/web/assets/js; coffee --watch -o coffee_js/ -c coffee/"
 alias sag="sudo apachectl graceful"
-alias flush_logs="cd $BNTERR && rm -f log/*.log"
+alias flush_logs="cd $BNTER && rm -f log/*.log"
 
 # minify 
-alias min_bnter="python $BNTER/tests/pyagg/pyagg.py $BNTER/tests/pyagg.js"
 alias min_fchat="python $FCHAT/pyagg/pyagg.py $FCHAT/tests/pyagg.js"
 
 # Navigation
 alias ..="cd .."
 alias cs="cd $CS"
 alias bnter="cd $BNTER"
-alias bnterr="cd $BNTERR"
 alias fchat="cd $FCHAT"
 alias m="mate ."
 alias dot="cd $DOTFILES"
@@ -27,7 +22,7 @@ alias ppd="popd"
 
 # Alias management
 alias reload="source ~/.bashrc"
-alias pushdot="sudo git add -A; sudo git commit -m 'update dotfiles'; sudo git pull; sudo git push origin master"
+alias pushdot="sudo git add -A; sudo git commit -m 'update dotfiles'; sudo git pull origin master; sudo git push origin master"
 
 # Processes
 alias tu='top -o cpu' # cpu

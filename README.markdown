@@ -1,4 +1,4 @@
-# Unix Commands
+ # Unix Commands
 Some helpful commands that I want to write down because I'm always looking them up anyways
 
 ## Terminal Navigation
@@ -45,6 +45,8 @@ Some helpful commands that I want to write down because I'm always looking them 
   * `git checkout -b local-name origin/remote-name`
 * Reset a file to a specific commit
   * `git checkout sha1hash file/to/restore`
+* Show commits in one branch and not another ([SO](http://stackoverflow.com/questions/7548926/git-and-the-branch-x-is-not-fully-merged-error))  
+  * `git log --graph --left-right --cherry-pick --oneline master...experiment`   
 
 ## Files
 * download from remote server
@@ -93,6 +95,8 @@ Some helpful commands that I want to write down because I'm always looking them 
   *  `curl -d "param1=value1&param2=value2" http://example.com/resource.cgi` 
 
 ## Used to set up this environment
+* `mkdir ~/bin; cd ~/bin`
+* `git clone git@github.com:goggin13/dotfiles.git`
 * in ~/.bashrc `. ~/bin/dotfiles/bashrc`
 * in ~/.bash_profile
   * `if [ -f ~/.bashrc ]; then . ~/.bashrc fi`
