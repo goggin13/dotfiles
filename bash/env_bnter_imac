@@ -3,11 +3,14 @@ export PATH=$PATH:~/bin
 
 export PATH=$PATH:/Users/goggin/Library/play-1.2.3
 export PATH=$PATH:/opt/local/bin:/opt/local/sbin
-export PATH=$PATH:/usr/local/git
 
-export PROJECTS=/Users/goggin/Documents/projects
+export PROJECTS=~/Documents/projects
 export BNTER=$PROJECTS/bnter_rails
+export BNTERR=$BNTER
 export FCHAT=/Library/WebServer/Documents/fchat
 export SELENIUM_SERVER_JAR=~/bin/selenium-server-standalone-2.7.0.jar
 export DOTFILES=~/bin/dotfiles
 
+export NODE_PATH=$NODE_PATH:/usr/local/lib/node_modules
+
+. /etc/profile.d/rvm.sh

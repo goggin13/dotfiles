@@ -4,6 +4,14 @@ alias clojure="java -cp /Users/mattgoggin/Library/Clojure/clojure.jar clojure.ma
 alias js="java -cp /Users/goggin/Documents/CS/rhino/js.jar:/Users/goggin/Documents/CS/rhino/jline.jar jline.ConsoleRunner org.mozilla.javascript.tools.shell.Main -opt -1"
 alias sag="sudo apachectl graceful"
 alias flush_logs="cd $BNTER && rm -f log/*.log"
+alias mysql=/usr/local/mysql/bin/mysql
+alias mysqladmin=/usr/local/mysql/bin/mysqladmin
+alias mysqldump=/usr/local/mysql/bin/mysqldump
+alias mysqlimport=/usr/local/mysql/bin/mysqlimport
+
+# rails
+alias ttp="mysql -uroot -pr00tbeer bnter_test --execute=\"truncate users;\" && echo 'truncated'"
+alias tp="bundle exec rake db:test:prepare"
 
 # minify 
 alias min_fchat="python $FCHAT/pyagg/pyagg.py $FCHAT/tests/pyagg.js"
@@ -61,4 +69,18 @@ function take {
 
 function be () {
 	bundle exec $1 $2 $3 $4
+}
+
+function ber () {
+	ttp
+	if [ "$#" -eq 0 ]; then
+		echo "bundle exec rspec"
+		bundle exec rspec
+	elif [ "$#" -eq 1 ]; then
+		echo "bundle exec rspec $1"
+		bundle exec rspec $1
+	elif [ "$#" -eq 2 ]; then
+	  echo "bundle exec rspec $1 -e \"$2\""
+		bundle exec rspec $1 -e "$2"
+	fi		
 }

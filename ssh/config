@@ -10,8 +10,24 @@ Host play_master
 Host bnter_staging
 	HostName bnterdev.com
 	User bitnami
-	IdentityFile ~/Desktop/CS/AWS/bnter_staging.pem
-	
+	IdentityFile ~/AWS/bnter_staging.pem
+
+Host staging.banters.com
+	HostName staging.banters.com
+	User deploy
+
+Host banters.com
+  HostName banters.com
+  User deploy
+
+Host banters.com-db
+  HostName ec2-75-101-242-251.compute-1.amazonaws.com
+  User deploy
+
+Host bnter.com
+  User root
+  Host 74.54.58.250
+
 Host ocaml
 	HostName ec2-107-22-102-73.compute-1.amazonaws.com
 	User ubuntu
