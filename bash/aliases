@@ -10,7 +10,6 @@ alias mysqldump=/usr/local/mysql/bin/mysqldump
 alias mysqlimport=/usr/local/mysql/bin/mysqlimport
 
 # rails
-alias ttp="mysql -uroot -pr00tbeer bnter_test --execute=\"truncate users;\" && echo 'truncated'"
 alias tp="bundle exec rake db:test:prepare"
 
 # minify 
@@ -72,7 +71,6 @@ function be () {
 }
 
 function ber () {
-	ttp
 	if [ "$#" -eq 0 ]; then
 		echo "bundle exec rspec"
 		bundle exec rspec
