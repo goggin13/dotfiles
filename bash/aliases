@@ -42,7 +42,7 @@ alias gaa='git add -A'
 alias wipeout="git reset --hard HEAD; git pull"
 
 function cmp () {
-  echo "https://github.com/patrickmoberg/bnter_rails/compare/$1...$2" | pbcopy
+  echo "https://github.com/patrickmoberg/bnter_rails/pull/new/patrickmoberg:$1...$2" | pbcopy
 }
 
 function pd () {
