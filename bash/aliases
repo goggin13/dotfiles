@@ -44,7 +44,7 @@ alias wipeout="git reset --hard HEAD; git pull"
 function cmp () {
 	if [ "$#" -eq 1 ]; then
 		echo "compare staging and $1"
-		echo "https://github.com/patrickmoberg/bnter_rails/pull/new/patrickmoberg:staging...$2" | pbcopy
+		echo "https://github.com/patrickmoberg/bnter_rails/pull/new/patrickmoberg:staging...$1" | pbcopy
 	elif [ "$#" -eq 2 ]; then
 		echo "compare $1 and $2"
 		echo "https://github.com/patrickmoberg/bnter_rails/pull/new/patrickmoberg:$1...$2" | pbcopy
