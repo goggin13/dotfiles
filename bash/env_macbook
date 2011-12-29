@@ -23,9 +23,9 @@ export PYTHONPATH=/Library/Frameworks/Python.framework/Versions/2.5/lib/python2.
 
 export EVENT_NOKQUEUE=1
 export CS=/Users/mattgoggin/Desktop/CS
-export BNTER=/Library/WebServer/Documents/bnter
-export BNTERR=$CS/rails_projects/bnter_rails
+export BNTER=$CS/rails_projects/bnter_rails
 export DOTFILES=~/bin/dotfiles
+export BLOG=~/Desktop/CS/home
 
 export DYLD_LIBRARY_PATH=/usr/local/mysql/lib/
 

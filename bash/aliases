@@ -20,12 +20,14 @@ alias ..="cd .."
 alias cs="cd $CS"
 alias bnter="cd $BNTER"
 alias fchat="cd $FCHAT"
+alias blog="cd $BLOG"
 alias m="mate ."
 alias dot="cd $DOTFILES"
 alias dotm="cd $DOTFILES && m"
 alias h="history"
 alias o="open ."
 alias ppd="popd"
+alias cf="ls -l | awk '!/^d/{print }' | wc -l"
 
 # Alias management
 alias reload="source ~/.bashrc"
@@ -40,6 +42,12 @@ alias g='clear; git status'
 alias b='clear; echo ====== BRANCHES ======; git branch'
 alias gaa='git add -A'
 alias wipeout="git reset --hard HEAD; git pull"
+
+function cff () {
+  # cd $1
+  cf
+  # cd -
+}
 
 function cmp () {
   echo "https://github.com/patrickmoberg/bnter_rails/pull/new/patrickmoberg:$1...$2" | pbcopy
