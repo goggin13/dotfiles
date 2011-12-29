@@ -50,7 +50,23 @@ function cff () {
 }
 
 function cmp () {
-  echo "https://github.com/patrickmoberg/bnter_rails/pull/new/patrickmoberg:$1...$2" | pbcopy
+	if [ "$#" -eq 1 ]; then
+		echo "compare staging and $1"
+		echo "https://github.com/patrickmoberg/bnter_rails/pull/new/patrickmoberg:staging...$1" | pbcopy
+	elif [ "$#" -eq 2 ]; then
+		echo "compare $1 and $2"
+		echo "https://github.com/patrickmoberg/bnter_rails/pull/new/patrickmoberg:$1...$2" | pbcopy
+	fi
+}
+
+function routes () {
+	if [ "$#" -eq 0 ]; then
+		echo "bundle exec rake routes"
+		bundle exec rake routes
+	else
+		echo "bundle exec rake routes | grep $1"
+		bundle exec rake routes | grep $1
+	fi
 }
 
 function pd () {
