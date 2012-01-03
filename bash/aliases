@@ -102,7 +102,12 @@ function ber () {
 		echo "bundle exec rspec $1"
 		bundle exec rspec $1
 	elif [ "$#" -eq 2 ]; then
-	  echo "bundle exec rspec $1 -e \"$2\""
-		bundle exec rspec $1 -e "$2"
+	  if [ "$2" = "ff" ]; then
+  	  echo "bundle exec rspec $1 --fail-fast"
+  		bundle exec rspec $1 --fail-fast
+	  else
+  	  echo "bundle exec rspec $1 -e \"$2\""
+  		bundle exec rspec $1 -e "$2"	    
+	  fi
 	fi		
 }
