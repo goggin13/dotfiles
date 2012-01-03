@@ -31,7 +31,7 @@ alias cf="ls -l | awk '!/^d/{print }' | wc -l"
 
 # Alias management
 alias reload="source ~/.bashrc"
-alias pushdot="sudo git add -A; sudo git commit -m 'update dotfiles'; sudo git pull origin master; sudo git push origin master"
+alias pushdot="dot; sudo git add -A; sudo git commit -m 'update dotfiles'; sudo git pull origin master; sudo git push origin master"
 
 # Processes
 alias tu='top -o cpu' # cpu
@@ -79,6 +79,13 @@ function co () {
 
 function gm () {
   git merge $1
+}
+
+function merge_staging () {
+  co staging
+  git pull origin staging
+  co $1
+  git merge staging
 }
 
 function gd () {
