@@ -7,13 +7,12 @@ Host play_master
   HostName 173.246.100.79	
   User play
 
-Host bnter_staging
-	HostName bnterdev.com
-	User bitnami
-	IdentityFile ~/AWS/bnter_staging.pem
-
 Host bnterdev.com
 	HostName bnterdev.com
+	User deploy
+
+Host sandbox.banters.com
+	HostName sandbox.banters.com
 	User deploy
 
 Host banters.com
