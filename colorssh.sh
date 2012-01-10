@@ -29,4 +29,4 @@ done
 ssh $*
 
 # back to normal
-setTerminalColors "{65535,65535,65535}" "{0,0,0}" 
+setTerminalColors "{0,65535,0}" "{0,0,0}" 
