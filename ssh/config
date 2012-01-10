@@ -12,8 +12,8 @@ Host bnter_staging
 	User bitnami
 	IdentityFile ~/AWS/bnter_staging.pem
 
-Host staging.banters.com
-	HostName staging.banters.com
+Host bnterdev.com
+	HostName bnterdev.com
 	User deploy
 
 Host banters.com
