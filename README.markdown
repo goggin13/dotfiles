@@ -59,6 +59,8 @@ Some helpful commands that I want to write down because I'm always looking them 
   * `for f in *; do mv $f $(echo $f | sed 's/hair/girlhair/g'); done`
   * `for f in *; do mv $f $(echo $f | sed 's/male/female/g'); done`
   * `for f in *; do mv $f $(echo $f | sed 's/female_\(.*\)_/&_female_/g'); done`
+* tail a log for a specific result, showing 5 lines before and after it
+  * `tail -f log/production.log | grep -n5 "likes"`
 
 ## MySQL
 * run a script against a DB
