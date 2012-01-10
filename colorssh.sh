@@ -17,8 +17,11 @@ do
         banters.com)
             setTerminalColors "{65535,65535,65535}" "{32767,0,0}"
             ;;
-        sandbox.banters.com)
+        bnterdev.com)
             setTerminalColors "{65535,65535,65535}" "{0,0,32767}"
+            ;;
+        sandbox.banters.com)
+            setTerminalColors "{65535,65535,65535}" "{32767,32767,32767}"
             ;;
     esac
 done
