@@ -107,17 +107,6 @@ Some helpful commands that I want to write down because I'm always looking them 
   * `curl -sL https://github.com/djl/vcprompt/raw/master/bin/vcprompt > ~/bin/vcprompt`
   * `chmod 755 ~/bin/vcprompt`
 
-## Rails
-* `bin/spork`
-* `rails console --sandbox`
-* `bin/rake db:migrate`
-* `bin/rake db:test:prepare`
-* `rails generate scaffold User name:string email:string`
-* `bin/annotate --position before`
-* `rails generate migration addUsernameAndLast_nameToser username:string last_name:string`
-* `bundle update`
-* `bin/rake jasmine JASMINE_PORT=9000`
-
 ## Memcache
 * `echo stats | nc 127.0.0.1 11211`
 
