@@ -59,6 +59,8 @@ Some helpful commands that I want to write down because I'm always looking them 
   * `for f in *; do mv $f $(echo $f | sed 's/hair/girlhair/g'); done`
   * `for f in *; do mv $f $(echo $f | sed 's/male/female/g'); done`
   * `for f in *; do mv $f $(echo $f | sed 's/female_\(.*\)_/&_female_/g'); done`
+* tail a log for a specific result, showing 5 lines before and after it
+  * `tail -f log/production.log | grep -n5 "likes"`
 
 ## MySQL
 * run a script against a DB
@@ -105,13 +107,6 @@ Some helpful commands that I want to write down because I'm always looking them 
   * `curl -sL https://github.com/djl/vcprompt/raw/master/bin/vcprompt > ~/bin/vcprompt`
   * `chmod 755 ~/bin/vcprompt`
 
-## Rails
-* `bin/spork`
-* `rails console --sandbox`
-* `bin/rake db:migrate`
-* `bin/rake db:test:prepare`
-* `rails generate scaffold User name:string email:string`
-* `bin/annotate --position before`
-* `rails generate migration addUsernameAndLast_nameToser username:string last_name:string`
-* `bundle update`
-* `bin/rake jasmine JASMINE_PORT=9000`
+## Memcache
+* `echo stats | nc 127.0.0.1 11211`
+
