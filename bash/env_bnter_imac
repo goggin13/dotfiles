@@ -14,3 +14,4 @@ export DOTFILES=~/bin/dotfiles
 export NODE_PATH=$NODE_PATH:/usr/local/lib/node_modules
 
 . /etc/profile.d/rvm.sh
+EVENT_NOKQUEUE=yes
