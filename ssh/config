@@ -19,25 +19,13 @@ Host banters.com
   HostName banters.com
   User deploy
 
-# Host app_server_1
-# 	ec2-107-20-78-130.compute-1.amazonaws.com
-# 	User deploy
-# 
-# Host app_server_2
-#   ec2-50-16-147-150.compute-1.amazonaws.com
-#   User deploy
-# 
-# Host app_master
-#   ec2-107-22-178-24.compute-1.amazonaws.com
-#   User deploy
-# 
-# Host db_slave
-#   ec2-107-20-57-145.compute-1.amazonaws.com
-#   User deploy
-# 
-# Host db_master
-#   ec2-75-101-242-251.compute-1.amazonaws.com
-#   User deploy
+Host banters.com1
+  HostName ec2-107-22-178-24.compute-1.amazonaws.com
+  User deploy
+
+Host banters.com2
+  HostName ec2-50-16-147-150.compute-1.amazonaws.com
+  User deploy
 
 Host bnter.com
   User root

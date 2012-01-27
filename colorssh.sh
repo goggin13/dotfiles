@@ -16,17 +16,17 @@ for ARG in $*
 do
     case "$ARG" in
         bnter.com)
-          setTerminalColors "{65535,65535,65535}" "{32767,0,0}"
-          ;;
+          setTerminalColors "{65535,65535,65535}" "{32767,0,0}";;
         banters.com)
-            setTerminalColors "{65535,65535,65535}" "{32767,0,0}"
-            ;;
+            setTerminalColors "{65535,65535,65535}" "{32767,0,0}";;
+        banters.com1)
+            setTerminalColors "{65535,65535,65535}" "{32767,0,0}";;
+        banters.com2)
+            setTerminalColors "{65535,65535,65535}" "{32767,0,0}";;
         bnterdev.com)
-            setTerminalColors "{65535,65535,65535}" "{6425,6425,28784}"
-            ;;
+            setTerminalColors "{65535,65535,65535}" "{6425,6425,28784}";;
         sandbox.banters.com)
-            setTerminalColors "{65535,65535,65535}" "{38550,19275,0}"
-            ;;
+            setTerminalColors "{65535,65535,65535}" "{38550,19275,0}";;
     esac
 done
 
