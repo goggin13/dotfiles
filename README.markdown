@@ -110,3 +110,7 @@ Some helpful commands that I want to write down because I'm always looking them 
 ## Memcache
 * `echo stats | nc 127.0.0.1 11211`
 
+## Vi  
+* global search and replace  
+  * `:%s/search_string/replacement_string/g`  
+
