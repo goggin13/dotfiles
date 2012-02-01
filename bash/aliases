@@ -8,12 +8,15 @@ alias mysql=/usr/local/mysql/bin/mysql
 alias mysqladmin=/usr/local/mysql/bin/mysqladmin
 alias mysqldump=/usr/local/mysql/bin/mysqldump
 alias mysqlimport=/usr/local/mysql/bin/mysqlimport
-alias memstats="echo stats | nc 127.0.0.1 11211"
 
-# rails
+# Memcache
+alias memstats="echo stats | nc 127.0.0.1 11211"
+alias start_memcache="memcached -d -m 24 -p 11211"
+
+# Rails
 alias tp="bundle exec rake db:test:prepare"
 
-# minify 
+# Minify 
 alias min_fchat="python $FCHAT/pyagg/pyagg.py $FCHAT/tests/pyagg.js"
 
 # Navigation
