@@ -103,7 +103,11 @@ function take {
 }
 
 function be () {
-	bundle exec $1 $2 $3 $4
+	bundle exec $1 $2 $3 $4 $5
+}
+
+function grep_routes () {
+	bundle exec rake routes | grep $1
 }
 
 function ber () {
