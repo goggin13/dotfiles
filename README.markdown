@@ -77,9 +77,11 @@ Some helpful commands that I want to write down because I'm always looking them 
   * mysqldump -u root -p --opt --default-character-set=latin1 --skip-set-charset  DBNAME > DBNAME.sql
   * mysql -u root -p --default-character-set=utf8  DBNAME < DBNAME.sql
   * see [SO post](http://stackoverflow.com/questions/346092/utf8-mysql-problems-on-rails-encoding-issues-with-utf8-general-ci)  
-* `CREATE USER 'monty'@'localhost' IDENTIFIED BY 'some_pass';`
-* `GRANT ALL PRIVILEGES ON *.* TO 'monty'@'localhost';`  
- 
+* create a user and grant them privileges
+  * `CREATE USER 'monty'@'localhost' IDENTIFIED BY 'some_pass';`
+  * `GRANT ALL PRIVILEGES ON *.* TO 'monty'@'localhost';`  
+* Get size of all databases in MB  
+  * `SELECT table_schema "Data Base Name", sum( data_length + index_length ) / 1024 / 1024 "Data Base Size in MB"  FROM information_schema.TABLES GROUP BY table_schema;`  
 ## OSX
 * flush DNS cache
   * `dscacheutil -flushcache`
