@@ -81,10 +81,10 @@ Some helpful commands that I want to write down because I'm always looking them 
   * `CREATE USER 'monty'@'localhost' IDENTIFIED BY 'some_pass';`
   * `GRANT ALL PRIVILEGES ON *.* TO 'monty'@'localhost';`  
 * Get size of all databases in MB  
-  * `SELECT table_schema "Data Base Name",`
-  * `       sum( data_length + index_length ) / 1024 / 1024 "Data Base Size in MB"`  
-  * `FROM information_schema.TABLES`  
-  * `GROUP BY table_schema;`  
+`SELECT table_schema "Data Base Name",`
+`       sum( data_length + index_length ) / 1024 / 1024 "Data Base Size in MB"`  
+`FROM information_schema.TABLES`  
+`GROUP BY table_schema;`  
 
 ## OSX
 * flush DNS cache
