@@ -77,7 +77,9 @@ Some helpful commands that I want to write down because I'm always looking them 
   * mysqldump -u root -p --opt --default-character-set=latin1 --skip-set-charset  DBNAME > DBNAME.sql
   * mysql -u root -p --default-character-set=utf8  DBNAME < DBNAME.sql
   * see [SO post](http://stackoverflow.com/questions/346092/utf8-mysql-problems-on-rails-encoding-issues-with-utf8-general-ci)  
-
+* CREATE USER 'monty'@'localhost' IDENTIFIED BY 'some_pass'; 
+* GRANT ALL PRIVILEGES ON *.* TO 'monty'@'localhost';  
+ 
 ## OSX
 * flush DNS cache
   * `dscacheutil -flushcache`
