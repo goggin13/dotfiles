@@ -60,7 +60,9 @@ Some helpful commands that I want to write down because I'm always looking them 
   * `for f in *; do mv $f $(echo $f | sed 's/male/female/g'); done`
   * `for f in *; do mv $f $(echo $f | sed 's/female_\(.*\)_/&_female_/g'); done`
 * tail a log for a specific result, showing 5 lines before and after it
-  * `tail -f log/production.log | grep -n5 "likes"`
+  * `tail -f log/production.log | grep -5 "likes"`
+  * `grep -A 5 "likes"`  # just the 5 lines after the match  
+  * `grep -B 5 "likes"`  # just the 5 lines before the match  
 
 ## MySQL
 * run a script against a DB
