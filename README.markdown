@@ -41,6 +41,8 @@ Some helpful commands that I want to write down because I'm always looking them 
   * `git checkout <branch_you_want_to_merge_from> <file_paths...>`
 * Update list of branches
   * `git fetch`
+* pull a specific commit from another branch
+  * `git cherry-pick <commit-hash>`  
 * checkout and track a remote branch 
   * `git checkout -b local-name origin/remote-name`
 * Reset a file to a specific commit
