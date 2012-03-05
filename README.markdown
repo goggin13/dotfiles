@@ -73,6 +73,8 @@ Some helpful commands that I want to write down because I'm always looking them 
   * `mysqladmin -u root -pPASSWORD shutdown`
 * dump a table to file
   * `mysqldump -c -u root -pPASSWORD database table > ~/Desktop/dump.sql`
+* write a query result to a file
+  * `mysql -e "select * from myTable" -u myuser -pxxxxxxxxx mydatabase > mydumpfile.txt`  
 * dump database ignoring some tables
   * `mysqldump -c -u root -pPASS --database bnter_latest --ignore-table=bnter_latest.filedata --ignore-table=bnter_latest.files > ~/Desktop/bnter.sql`
 * put logs to table (will reset on server restart)
