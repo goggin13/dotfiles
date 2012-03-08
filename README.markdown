@@ -49,6 +49,8 @@ Some helpful commands that I want to write down because I'm always looking them 
   * `git checkout sha1hash file/to/restore`
 * Show commits in one branch and not another ([SO](http://stackoverflow.com/questions/7548926/git-and-the-branch-x-is-not-fully-merged-error))  
   * `git log --graph --left-right --cherry-pick --oneline master...experiment`   
+* show all commits in any branch (--all) that introduced or removed a string from a file  
+  * `git log --all -Sdomain_safe_username app/models/user.rb`  
 
 ## Files
 * download from remote server
