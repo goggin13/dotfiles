@@ -41,6 +41,8 @@ Some helpful commands that I want to write down because I'm always looking them 
   * `git checkout <branch_you_want_to_merge_from> <file_paths...>`
 * Update list of branches
   * `git fetch`
+* pull a specific commit from another branch
+  * `git cherry-pick <commit-hash>`  
 * checkout and track a remote branch 
   * `git checkout -b local-name origin/remote-name`
 * Reset a file to a specific commit
@@ -60,7 +62,9 @@ Some helpful commands that I want to write down because I'm always looking them 
   * `for f in *; do mv $f $(echo $f | sed 's/male/female/g'); done`
   * `for f in *; do mv $f $(echo $f | sed 's/female_\(.*\)_/&_female_/g'); done`
 * tail a log for a specific result, showing 5 lines before and after it
-  * `tail -f log/production.log | grep -n5 "likes"`
+  * `tail -f log/production.log | grep -5 "likes"`
+  * `grep -A 5 "likes"`  # just the 5 lines after the match  
+  * `grep -B 5 "likes"`  # just the 5 lines before the match  
 
 ## MySQL
 * run a script against a DB
@@ -69,6 +73,8 @@ Some helpful commands that I want to write down because I'm always looking them 
   * `mysqladmin -u root -pPASSWORD shutdown`
 * dump a table to file
   * `mysqldump -c -u root -pPASSWORD database table > ~/Desktop/dump.sql`
+* write a query result to a file
+  * `mysql -e "select * from myTable" -u myuser -pxxxxxxxxx mydatabase > mydumpfile.txt`  
 * dump database ignoring some tables
   * `mysqldump -c -u root -pPASS --database bnter_latest --ignore-table=bnter_latest.filedata --ignore-table=bnter_latest.files > ~/Desktop/bnter.sql`
 * put logs to table (will reset on server restart)
@@ -77,6 +83,14 @@ Some helpful commands that I want to write down because I'm always looking them 
   * mysqldump -u root -p --opt --default-character-set=latin1 --skip-set-charset  DBNAME > DBNAME.sql
   * mysql -u root -p --default-character-set=utf8  DBNAME < DBNAME.sql
   * see [SO post](http://stackoverflow.com/questions/346092/utf8-mysql-problems-on-rails-encoding-issues-with-utf8-general-ci)  
+* create a user and grant them privileges
+  * `CREATE USER 'monty'@'localhost' IDENTIFIED BY 'some_pass';`
+  * `GRANT ALL PRIVILEGES ON *.* TO 'monty'@'localhost';`  
+* Get size of all databases in MB  
+`SELECT table_schema "Data Base Name",`  
+`       sum( data_length + index_length ) / 1024 / 1024 "Data Base Size in MB"`  
+`FROM information_schema.TABLES`  
+`GROUP BY table_schema;`  
 
 ## OSX
 * flush DNS cache
