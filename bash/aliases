@@ -15,6 +15,7 @@ alias start_memcache="memcached -d -m 24 -p 11211"
 
 # Rails
 alias tp="bundle exec rake db:test:prepare"
+alias deploy="ruby ~/bin/dotfiles/ey_deploy.rb"
 
 # Minify 
 alias min_fchat="python $FCHAT/pyagg/pyagg.py $FCHAT/tests/pyagg.js"
