@@ -1,4 +1,7 @@
 
+# curl https://raw.github.com/goggin13/dotfiles/master/ey_deploy.rb -o ~/ey_deploy.rb
+# echo "alias deploy='ruby ~/ey_deploy.rb'" >> ~/.bash_profile
+# source ~/.bash_profile
 
 unless ARGV.length > 1
   puts "usage: deploy <environment> <ref> <migrate>"
@@ -16,7 +19,7 @@ else
   ref = ARGV[1]
   migrate = ARGV[2] == 'migrate'
 
-  cmd = "ey deploy -e #{env} -ref #{ref}"
+  cmd = "ey deploy -e #{env} --ref #{ref}"
   cmd += " --migrate 'bundle exec rake db:migrate'" if migrate
 
   if env =~ /^p/
