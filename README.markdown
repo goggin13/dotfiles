@@ -51,6 +51,10 @@ Some helpful commands that I want to write down because I'm always looking them 
   * `git log --graph --left-right --cherry-pick --oneline master...experiment`   
 * show all commits in any branch (--all) that introduced or removed a string from a file  
   * `git log --all -Sdomain_safe_username app/models/user.rb`  
+* undo last commit (see here)[http://stackoverflow.com/questions/927358/git-undo-last-commit]
+  * `git reset --soft HEAD^`  # then perform your edits  
+  * `git add -A`  # add your edits   
+  * `git commit -c ORIG_HEAD` # commit them back  
 
 ## Files
 * download from remote server
