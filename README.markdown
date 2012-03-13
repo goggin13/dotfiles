@@ -97,6 +97,9 @@ Some helpful commands that I want to write down because I'm always looking them 
 `       sum( data_length + index_length ) / 1024 / 1024 "Data Base Size in MB"`  
 `FROM information_schema.TABLES`  
 `GROUP BY table_schema;`  
+* find and kill a query  
+  * `show processlist`  
+  * `kill <pid>`  
 
 ## OSX
 * flush DNS cache
