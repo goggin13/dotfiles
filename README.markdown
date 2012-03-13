@@ -55,6 +55,11 @@ Some helpful commands that I want to write down because I'm always looking them 
   * `git reset --soft HEAD^`  # then perform your edits  
   * `git add -A`  # add your edits   
   * `git commit -c ORIG_HEAD` # commit them back  
+* search commits  
+  * `git log --grep=foobar --since=1.month`   
+* retrieve a deleted file  [SO](http://stackoverflow.com/questions/953481/restore-a-deleted-file-in-a-git-repo)
+  * `git rev-list -n 1 HEAD -- <file_path>` # the last commit which affected it (therefore the deleting commit)  
+  * `git checkout <deleting_commit>^ -- <file_path>` # checkout the previous commit  
 
 ## Files
 * download from remote server
