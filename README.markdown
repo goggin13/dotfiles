@@ -49,6 +49,17 @@ Some helpful commands that I want to write down because I'm always looking them 
   * `git checkout sha1hash file/to/restore`
 * Show commits in one branch and not another ([SO](http://stackoverflow.com/questions/7548926/git-and-the-branch-x-is-not-fully-merged-error))  
   * `git log --graph --left-right --cherry-pick --oneline master...experiment`   
+* show all commits in any branch (--all) that introduced or removed a string from a file  
+  * `git log --all -Sdomain_safe_username app/models/user.rb`  
+* undo last commit (see here)[http://stackoverflow.com/questions/927358/git-undo-last-commit]
+  * `git reset --soft HEAD^`  # then perform your edits  
+  * `git add -A`  # add your edits   
+  * `git commit -c ORIG_HEAD` # commit them back  
+* search commits  
+  * `git log --grep=foobar --since=1.month`   
+* retrieve a deleted file  [SO](http://stackoverflow.com/questions/953481/restore-a-deleted-file-in-a-git-repo)
+  * `git rev-list -n 1 HEAD -- <file_path>` # the last commit which affected it (therefore the deleting commit)  
+  * `git checkout <deleting_commit>^ -- <file_path>` # checkout the previous commit  
 
 ## Files
 * download from remote server
@@ -91,6 +102,9 @@ Some helpful commands that I want to write down because I'm always looking them 
 `       sum( data_length + index_length ) / 1024 / 1024 "Data Base Size in MB"`  
 `FROM information_schema.TABLES`  
 `GROUP BY table_schema;`  
+* find and kill a query  
+  * `show processlist`  
+  * `kill <pid>`  
 
 ## OSX
 * flush DNS cache
