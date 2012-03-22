@@ -23,6 +23,10 @@ do
             setTerminalColors "{65535,65535,65535}" "{32767,0,0}";;
         banters.com2)
             setTerminalColors "{65535,65535,65535}" "{32767,0,0}";;
+        banters.com3)
+            setTerminalColors "{65535,65535,65535}" "{32767,0,0}";;
+        banters.com4)
+            setTerminalColors "{65535,65535,65535}" "{32767,0,0}";;
         bnterdev.com)
             setTerminalColors "{65535,65535,65535}" "{6425,6425,28784}";;
         sandbox.banters.com)
