@@ -76,6 +76,8 @@ Some helpful commands that I want to write down because I'm always looking them 
   * `tail -f log/production.log | grep -5 "likes"`
   * `grep -A 5 "likes"`  # just the 5 lines after the match  
   * `grep -B 5 "likes"`  # just the 5 lines before the match  
+* sed modify in place  
+  * `sed -i '' -e "s/\(line\)/#\1/g"  file.txt`  
 
 ## MySQL
 * run a script against a DB
