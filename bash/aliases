@@ -129,3 +129,8 @@ function ber () {
 	  fi
 	fi		
 }
+
+function r () {
+	echo "bundle exec rake $1"
+	bundle exec rake $1
+}
