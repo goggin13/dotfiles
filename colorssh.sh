@@ -29,8 +29,10 @@ do
             setTerminalColors "{65535,65535,65535}" "{32767,0,0}";;
         bnterdev.com)
             setTerminalColors "{65535,65535,65535}" "{6425,6425,28784}";;
+        banters_util)
+            setTerminalColors "{65535,65535,65535}" "{0,12849,0}";;
         sandbox.banters.com)
-            setTerminalColors "{65535,65535,65535}" "{38550,19275,0}";;
+            setTerminalColors "{32767,65535,65535}" "{38550,19275,0}";;
     esac
 done
 

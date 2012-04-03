@@ -35,6 +35,10 @@ Host banters.com4
   HostName ec2-107-22-64-5.compute-1.amazonaws.com
   User deploy
 
+Host banters_util
+	HostName ec2-174-129-180-156.compute-1.amazonaws.com
+	User deploy
+
 Host bnter.com
   User root
   Host 74.54.58.250
