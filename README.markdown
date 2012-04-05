@@ -13,6 +13,7 @@ Some helpful commands that I want to write down because I'm always looking them 
 * `!$` last argument from previous command. `!:0`, `!:1`, to index arguments
 * `^from^to` replace first occurrence of from with to
 * `history` displays all previous commands.  Follow with `!999`, where 999 is the index of a history item to execute again.  Or, try `!ma`, which would execute the closest command which begins with 'ma'
+  * press `esc` followed by `ctrl+e` to expand the command but not execute it [(SF)](http://serverfault.com/questions/375316/how-to-copy-a-previously-entered-command-using-the-history-utility-without-runni?newsletter=1&nlcode=13741%7c017a)  
 * `cd -` go to previous directory
 * `pushd`, `popd` cd to directory and push it onto a stack; use `popd` to revist the stack of directories
 
