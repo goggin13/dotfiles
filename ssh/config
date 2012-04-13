@@ -11,6 +11,10 @@ Host bnterdev.com
   HostName bnterdev.com
   User deploy
 
+Host bnterdev_util
+	HostName ec2-107-22-143-158.compute-1.amazonaws.com
+	User deploy
+
 Host sandbox.banters.com
   HostName sandbox.banters.com
   User deploy

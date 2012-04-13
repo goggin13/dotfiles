@@ -108,6 +108,8 @@ Some helpful commands that I want to write down because I'm always looking them 
 * find and kill a query  
   * `show processlist`  
   * `kill <pid>`  
+* drop an index
+  * `DROP INDEX index_name ON tbl_name` 
 
 ## OSX
 * flush DNS cache
