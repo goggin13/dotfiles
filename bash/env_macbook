@@ -6,3 +6,9 @@ export STATLER=~/projects/rails/statler
 export BLOG=~/Desktop/CS/home
 export DOTFILES=~/bin/dotfiles
 
+alias mysql=/usr/local/bin/mysql
+alias mysqladmin=/usr/local/mysqladmin
+alias mysqldump=/usr/local/mysqldump
+alias mysqlimport=/usr/local/mysqlimport
+
+[[ -s "~/.rvm/scripts/rvm" ]] && source "~/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*
