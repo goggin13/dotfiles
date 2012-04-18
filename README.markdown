@@ -114,6 +114,8 @@ Some helpful commands that I want to write down because I'm always looking them 
 ## OSX
 * flush DNS cache
   * `dscacheutil -flushcache`
+* top CPU consumers  
+  * `top -o cpu -stats command,cpu,threads -n 20`  
 
 ## Coffee
 * Compile a directory tree of .coffee files into a parallel tree of .js, in lib:
