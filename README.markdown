@@ -132,7 +132,15 @@ Some helpful commands that I want to write down because I'm always looking them 
   *  `curl -d "param1=value1&param2=value2" http://example.com/resource.cgi` 
 * download a file  
   *  `curl https://github.com/goggin13/dotfiles/blob/master/colorssh.sh -o ~/colorssh.sh`   
-  
+* debug transfer times  
+  * `curl http://banters.com/?session_id=YOUR_SESSION_ID -w 'curl times
+[s]:\n\ttime_starttransfer: %{time_starttransfer}\n\ttime_redirect:
+%{time_redirect}\n\ttime_pretransfer:
+%{time_pretransfer}\n\ttime_connect:
+%{time_connect}\n\ttime_namelookup:
+%{time_namelookup}\n\ttime_appconnect:
+%{time_appconnect}\n\ttime_total: %{time_total}' -i`    
+
 ## Used to set up this environment
 * `mkdir ~/bin; cd ~/bin`
 * `git clone git@github.com:goggin13/dotfiles.git`
