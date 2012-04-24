@@ -4,6 +4,8 @@
  
 # curl -o ~/git-diff-wrapper.sh https://raw.github.com/goggin13/dotfiles/master/git-diff-wrapper.sh
 # chmod +x ~/git-diff-wrapper.sh 
+
+# Exchange the path in this command for the full path to where you downloaded the wrapper
 # git config --global diff.external /Users/goggin/bin/dotfiles/git-diff-wrapper.sh 
 
 # diff is called by git with 7 parameters:
