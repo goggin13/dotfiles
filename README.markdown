@@ -16,6 +16,9 @@ Some helpful commands that I want to write down because I'm always looking them 
   * press `esc` followed by `ctrl+e` to expand the command but not execute it [(SF)](http://serverfault.com/questions/375316/how-to-copy-a-previously-entered-command-using-the-history-utility-without-runni?newsletter=1&nlcode=13741%7c017a)  
 * `cd -` go to previous directory
 * `pushd`, `popd` cd to directory and push it onto a stack; use `popd` to revist the stack of directories
+* `strace` to view messages from a particular process id.  Useful if `top` is displaying exepensive processes that you want to debug.  
+  * `sudo strace -p PID`    
+
 
 ## Git
 * git pull and overwrite
