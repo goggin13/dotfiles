@@ -18,6 +18,7 @@ Some helpful commands that I want to write down because I'm always looking them 
 * `pushd`, `popd` cd to directory and push it onto a stack; use `popd` to revist the stack of directories
 * `strace` to view messages from a particular process id.  Useful if `top` is displaying exepensive processes that you want to debug.  
   * `sudo strace -p PID`    
+  * [presentation](http://www.scribd.com/doc/31915761/Ruby-Debugging-at-Unix) using this to debug ruby apps  
 
 
 ## Git
