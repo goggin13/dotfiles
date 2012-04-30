@@ -65,6 +65,8 @@ Some helpful commands that I want to write down because I'm always looking them 
 * retrieve a deleted file  [SO](http://stackoverflow.com/questions/953481/restore-a-deleted-file-in-a-git-repo)
   * `git rev-list -n 1 HEAD -- <file_path>` # the last commit which affected it (therefore the deleting commit)  
   * `git checkout <deleting_commit>^ -- <file_path>` # checkout the previous commit  
+* rebase pushed commits (assuming no one else has pulled them [SO](http://stackoverflow.com/questions/5667884/how-to-squash-commits-in-git-after-they-have-been-pushed)  
+  * `git rebase -i` and then `git push origin +master` (or `git push --force origin master`)  
 
 ## Files
 * download from remote server
