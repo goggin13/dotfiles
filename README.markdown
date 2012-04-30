@@ -1,5 +1,5 @@
  # Unix Commands
-Some helpful commands that I want to write down because I'm always looking them up anyways
+Commands that I want to write down because I'm always looking them up anyways
 
 ## Terminal Navigation
 * `^a` beginning of line
