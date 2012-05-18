@@ -1,5 +1,5 @@
  # Unix Commands
-Some helpful commands that I want to write down because I'm always looking them up anyways
+Commands that I want to write down because I'm always looking them up anyways
 
 ## Terminal Navigation
 * `^a` beginning of line
@@ -16,6 +16,10 @@ Some helpful commands that I want to write down because I'm always looking them 
   * press `esc` followed by `ctrl+e` to expand the command but not execute it [(SF)](http://serverfault.com/questions/375316/how-to-copy-a-previously-entered-command-using-the-history-utility-without-runni?newsletter=1&nlcode=13741%7c017a)  
 * `cd -` go to previous directory
 * `pushd`, `popd` cd to directory and push it onto a stack; use `popd` to revist the stack of directories
+* `strace` to view messages from a particular process id.  Useful if `top` is displaying exepensive processes that you want to debug.  
+  * `sudo strace -p PID`    
+  * [presentation](http://www.scribd.com/doc/31915761/Ruby-Debugging-at-Unix) using this to debug ruby apps  
+
 
 ## Git
 * git pull and overwrite
@@ -61,6 +65,8 @@ Some helpful commands that I want to write down because I'm always looking them 
 * retrieve a deleted file  [SO](http://stackoverflow.com/questions/953481/restore-a-deleted-file-in-a-git-repo)
   * `git rev-list -n 1 HEAD -- <file_path>` # the last commit which affected it (therefore the deleting commit)  
   * `git checkout <deleting_commit>^ -- <file_path>` # checkout the previous commit  
+* rebase pushed commits (assuming no one else has pulled them [SO](http://stackoverflow.com/questions/5667884/how-to-squash-commits-in-git-after-they-have-been-pushed)  
+  * `git rebase -i` and then `git push origin +<branch>` (or `git push --force origin <branch>`)  
 
 ## Files
 * download from remote server
@@ -132,7 +138,15 @@ Some helpful commands that I want to write down because I'm always looking them 
   *  `curl -d "param1=value1&param2=value2" http://example.com/resource.cgi` 
 * download a file  
   *  `curl https://github.com/goggin13/dotfiles/blob/master/colorssh.sh -o ~/colorssh.sh`   
-  
+* debug transfer times  
+  * `curl http://banters.com/?session_id=YOUR_SESSION_ID -w 'curl times
+[s]:\n\ttime_starttransfer: %{time_starttransfer}\n\ttime_redirect:
+%{time_redirect}\n\ttime_pretransfer:
+%{time_pretransfer}\n\ttime_connect:
+%{time_connect}\n\ttime_namelookup:
+%{time_namelookup}\n\ttime_appconnect:
+%{time_appconnect}\n\ttime_total: %{time_total}' -i`    
+
 ## Used to set up this environment
 * `mkdir ~/bin; cd ~/bin`
 * `git clone git@github.com:goggin13/dotfiles.git`
