@@ -1,9 +1,10 @@
 
 export PATH=$PATH:~/bin
 
-export BNTER=~/projects/rails/banters
-export STATLER=~/projects/rails/statler
-export BLOG=~/Desktop/CS/home
+export PROJECTS=~/projects
+export BNTER=$PROJECTS/rails/banters
+export STATLER=$PROJECTS/rails/statler
+export BLOG=$PROJECTS//ocaml/home/
 export DOTFILES=~/bin/dotfiles
 
 alias mysql=/usr/local/bin/mysql
