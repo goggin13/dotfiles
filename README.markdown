@@ -168,5 +168,3 @@ Commands that I want to write down because I'm always looking them up anyways
 ## haproxy  
 *  start  
   * `/etc/init.d/haproxy start`  
-
-*  
