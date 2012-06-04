@@ -4,6 +4,8 @@ alias clojure="java -cp /Users/mattgoggin/Library/Clojure/clojure.jar clojure.ma
 alias js="java -cp /Users/goggin/Documents/CS/rhino/js.jar:/Users/goggin/Documents/CS/rhino/jline.jar jline.ConsoleRunner org.mozilla.javascript.tools.shell.Main -opt -1"
 alias sag="sudo apachectl graceful"
 alias flush_logs="cd $BNTER && rm -f log/*.log"
+alias m="mate ."
+alias ssh="$DOTFILES/colorssh.sh"
 
 # Memcache
 alias memstats="echo stats | nc 127.0.0.1 11211"
@@ -19,15 +21,15 @@ alias min_fchat="python $FCHAT/pyagg/pyagg.py $FCHAT/tests/pyagg.js"
 
 # Navigation
 alias ..="cd .."
-alias cs="cd $CS"
 alias bnter="cd $BNTER"
 alias statler="cd $STATLER"
 alias fchat="cd $FCHAT"
 alias blog="cd $BLOG"
-alias m="mate ."
+alias pr="cd $PROJECTS"
 alias dot="cd $DOTFILES"
+
 alias dotm="cd $DOTFILES && m"
-alias ssh="$DOTFILES/colorssh.sh"
+
 alias h="history"
 alias o="open ."
 alias ppd="popd"

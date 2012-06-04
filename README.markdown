@@ -66,7 +66,7 @@ Commands that I want to write down because I'm always looking them up anyways
   * `git rev-list -n 1 HEAD -- <file_path>` # the last commit which affected it (therefore the deleting commit)  
   * `git checkout <deleting_commit>^ -- <file_path>` # checkout the previous commit  
 * rebase pushed commits (assuming no one else has pulled them [SO](http://stackoverflow.com/questions/5667884/how-to-squash-commits-in-git-after-they-have-been-pushed)  
-  * `git rebase -i` and then `git push origin +master` (or `git push --force origin master`)  
+  * `git rebase -i` and then `git push origin +<branch>` (or `git push --force origin <branch>`)  
 
 ## Files
 * download from remote server
@@ -165,3 +165,6 @@ Commands that I want to write down because I'm always looking them up anyways
 * global search and replace  
   * `:%s/search_string/replacement_string/g`  
 
+## haproxy  
+*  start  
+  * `/etc/init.d/haproxy start`  
