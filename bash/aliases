@@ -25,6 +25,7 @@ alias bnter="cd $BNTER"
 alias statler="cd $STATLER"
 alias fchat="cd $FCHAT"
 alias blog="cd $BLOG"
+alias projects="cd $PROJECTS"
 alias pr="cd $PROJECTS"
 alias dot="cd $DOTFILES"
 
