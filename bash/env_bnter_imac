@@ -1,16 +1,11 @@
- 
-export PATH=$PATH:~/bin
+
+. ~/bin/dotfiles/bash/env_common
 
 export PATH=$PATH:~/bin/play-1.1.2
 export PATH=$PATH:/opt/local/bin:/opt/local/sbin
 
-export PROJECTS=~/Documents/projects
-export BNTER=$PROJECTS/bnter_rails
-export BNTERR=$BNTER
 export FCHAT=/Library/WebServer/Documents/fchat
 export SELENIUM_SERVER_JAR=~/bin/selenium-server-standalone-2.7.0.jar
-export DOTFILES=~/bin/dotfiles
-
 
 export NODE_PATH=$NODE_PATH:/usr/local/lib/node_modules
 
