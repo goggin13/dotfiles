@@ -160,7 +160,7 @@ Commands that I want to write down because I'm always looking them up anyways
 ## Java
 * Make and run a jar file
   * `javac *.java`  -- compile  
-  * `jar cfm PopulateS3ImagesJob.jar manifest.txt PopulateS3ImagesJob.java`  --jarify  
+  * `jar cfm PopulateS3ImagesJob.jar manifest.txt PopulateS3ImagesJob.class`  --jarify  
     * manifest.txt contains at least 'Main-Class: PopulateS3ImagesJob'  
   * `java -jar PopulateS3ImagesJob.jar`  -- run it  
 
