@@ -67,6 +67,14 @@ Commands that I want to write down because I'm always looking them up anyways
   * `git checkout <deleting_commit>^ -- <file_path>` # checkout the previous commit  
 * rebase pushed commits (assuming no one else has pulled them [SO](http://stackoverflow.com/questions/5667884/how-to-squash-commits-in-git-after-they-have-been-pushed)  
   * `git rebase -i` and then `git push origin +<branch>` (or `git push --force origin <branch>`)  
+* Show logs on <branchname> that aren't in HEAD  
+  * `git log ..<branchname>`  
+* Short status  
+  * `git status --short`  
+* Search for merge conflict markers (not git I know, but useful)  
+  * `grep -r'<<<<' *`  
+* Search for a line of text  
+  * `git log -s'.round_border'`  
 
 ## Files
 * download from remote server
@@ -116,6 +124,8 @@ Commands that I want to write down because I'm always looking them up anyways
   * `kill <pid>`  
 * drop an index
   * `DROP INDEX index_name ON tbl_name` 
+* dump just structure  
+  * `mysqldump -d database01 > dumpfile.sql`  
 
 ## OSX
 * flush DNS cache
@@ -147,16 +157,12 @@ Commands that I want to write down because I'm always looking them up anyways
 %{time_namelookup}\n\ttime_appconnect:
 %{time_appconnect}\n\ttime_total: %{time_total}' -i`    
 
-## Used to set up this environment
-* `mkdir ~/bin; cd ~/bin`
-* `git clone git@github.com:goggin13/dotfiles.git`
-* in ~/.bashrc `. ~/bin/dotfiles/bashrc`
-* in ~/.bash_profile
-  * `if [ -f ~/.bashrc ]; then . ~/.bashrc fi`
-* `ln -s ~/bin/dotfiles/ssh/config ~/.ssh/config`
-* download vcprompt
-  * `curl -sL https://github.com/djl/vcprompt/raw/master/bin/vcprompt > ~/bin/vcprompt`
-  * `chmod 755 ~/bin/vcprompt`
+## Java
+* Make and run a jar file
+  * `javac *.java`  -- compile  
+  * `jar cfm PopulateS3ImagesJob.jar manifest.txt PopulateS3ImagesJob.java`  --jarify  
+    * manifest.txt contains at least 'Main-Class: PopulateS3ImagesJob'  
+  * `java -jar PopulateS3ImagesJob.jar`  -- run it  
 
 ## Memcache
 * `echo stats | nc 127.0.0.1 11211`
@@ -168,3 +174,14 @@ Commands that I want to write down because I'm always looking them up anyways
 ## haproxy  
 *  start  
   * `/etc/init.d/haproxy start`  
+
+## Used to set up this environment
+  * `mkdir ~/bin; cd ~/bin`
+  * `git clone git@github.com:goggin13/dotfiles.git`
+  * in ~/.bashrc `. ~/bin/dotfiles/bashrc`
+  * in ~/.bash_profile
+    * `if [ -f ~/.bashrc ]; then . ~/.bashrc fi`
+  * `ln -s ~/bin/dotfiles/ssh/config ~/.ssh/config`
+  * download vcprompt
+    * `curl -sL https://github.com/djl/vcprompt/raw/master/bin/vcprompt > ~/bin/vcprompt`
+    * `chmod 755 ~/bin/vcprompt`

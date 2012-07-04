@@ -7,6 +7,9 @@ alias flush_logs="cd $BNTER && rm -f log/*.log"
 alias m="mate ."
 alias ssh="$DOTFILES/colorssh.sh"
 
+export CLICOLOR=1
+export LSCOLORS=gxBxhxDxfxhxhxhxhxcxcx
+
 # Memcache
 alias memstats="echo stats | nc 127.0.0.1 11211"
 alias start_memcache="memcached -d -m 24 -p 11211"
