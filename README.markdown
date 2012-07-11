@@ -126,6 +126,8 @@ Commands that I want to write down because I'm always looking them up anyways
   * `DROP INDEX index_name ON tbl_name` 
 * dump just structure  
   * `mysqldump -d database01 > dumpfile.sql`  
+* dump by where statement  
+  * `mysqldump --databases X --tables Y --where="1 limit 1000000"`  
 
 ## OSX
 * flush DNS cache
