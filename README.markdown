@@ -75,6 +75,8 @@ Commands that I want to write down because I'm always looking them up anyways
   * `grep -r'<<<<' *`  
 * Search for a line of text  
   * `git log -s'.round_border'`  
+* view contents of git stash  
+  * `git stash show -p stash@{0}`  
 
 ## Files
 * download from remote server
