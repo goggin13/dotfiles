@@ -1,51 +1,9 @@
-
-Host play_staging
-  HostName 173.246.101.145
-  User play
-
-Host play_master
-  HostName 173.246.100.79 
-  User play
-
-Host bnterdev.com
-  HostName bnterdev.com
-  User deploy
-
-Host bnterdev_util
-	HostName ec2-107-22-143-158.compute-1.amazonaws.com
-	User deploy
-
-Host sandbox.banters.com
-  HostName sandbox.banters.com
-  User deploy
+Host *
+  ServerAliveInterval 60
 
 Host banters.com
   HostName banters.com
   User deploy
-
-Host banters.com1
-  HostName ec2-107-22-178-24.compute-1.amazonaws.com
-  User deploy
-
-Host banters.com2
-  HostName ec2-50-16-147-150.compute-1.amazonaws.com
-  User deploy
-
-Host banters.com3
-  HostName ec2-23-20-119-44.compute-1.amazonaws.com
-  User deploy
-
-Host banters.com4
-  HostName ec2-107-22-64-5.compute-1.amazonaws.com
-  User deploy
-
-Host banters_util
-	HostName ec2-174-129-180-156.compute-1.amazonaws.com
-	User deploy
-
-Host bnter.com
-  User root
-  Host 74.54.58.250
 
 Host ocaml
   HostName ec2-107-22-102-73.compute-1.amazonaws.com
@@ -55,3 +13,7 @@ Host ocaml
 Host ec2-107-20-19-82.compute-1.amazonaws.com
   HostName ec2-107-20-19-82.compute-1.amazonaws.com
   User ubuntu
+
+Host nbsdev
+  User matt-goggin
+  HostName 198.101.135.167

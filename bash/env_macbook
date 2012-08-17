@@ -6,4 +6,49 @@ alias mysqladmin=/usr/local/mysqladmin
 alias mysqldump=/usr/local/mysqldump
 alias mysqlimport=/usr/local/mysqlimport
 
+alias dc1-wiki-prd-001='ssh matt-goggin@108.166.49.144'
+alias dc1-findapp-dev-001='ssh matt-goggin@108.166.49.145'
+alias dc1-node-prd-001='ssh matt-goggin@108.166.49.146'
+alias dc1-cmdweb-prd-001='ssh matt-goggin@108.166.49.147'
+alias dc1-node-prd-002='ssh matt-goggin@108.166.49.148'
+alias dc1-node-prd-003='ssh matt-goggin@108.166.49.150'
+alias dc1-nbswebui-prd-001='ssh matt-goggin@108.166.49.149'
+alias dc1-balancer-prd-001='ssh matt-goggin@108.166.49.151'
+alias dc1-mq-prd-001='ssh matt-goggin@108.166.49.83'
+alias dc1-mq-prd-002='ssh matt-goggin@108.166.49.82'
+alias dc1-es-prd-001='ssh matt-goggin@108.166.49.140'
+alias dc1-nagios-prd-001='ssh matt-goggin@108.166.49.141'
+alias dc1-graphite-prd-001='ssh matt-goggin@108.166.49.142'
+alias dc1-jenkins-prd-001='ssh matt-goggin@108.166.49.143'
+alias dc1-web-int-001='ssh matt-goggin@198.101.142.55'
+alias dc1-scripts-prd-001='ssh matt-goggin@198.101.137.123'
+alias dc1-ftp-prd-001='ssh matt-goggin@198.101.137.244'
+alias dc1-mongod-prd-001='ssh matt-goggin@198.101.141.159'
+alias dc1-mongod-prd-002='ssh matt-goggin@198.101.141.209'
+alias dc1-mongod-prd-003='ssh matt-goggin@198.101.141.208'
+alias dc1-mongod-prd-004='ssh matt-goggin@198.101.141.212'
+alias dc1-mongoa-prd-001='ssh matt-goggin@198.101.141.211'
+alias dc1-mongoa-prd-002='ssh matt-goggin@198.101.141.213'
+alias dc1-mongoc-prd-001='ssh matt-goggin@198.101.141.210'
+alias dc1-mongoc-prd-002='ssh matt-goggin@198.101.141.214'
+alias dc1-mongoc-prd-003='ssh matt-goggin@198.101.141.215'
+alias dc1-mongod-prd-005='ssh matt-goggin@198.101.142.54'
+alias dc1-mysql-dev-001='ssh matt-goggin@198.101.137.121'
+alias dc1-chef-prd-001='ssh matt-goggin@108.166.49.81'
+alias dc1-memcached-prd-001='ssh matt-goggin@198.101.137.122'
+alias dc1-nbswebui-prd-002='ssh matt-goggin@198.101.142.39'
+alias dc1-nbswebui-prd-003='ssh matt-goggin@198.101.142.40'
+alias dc1-sftp-prd-001='ssh matt-goggin@198.101.135.44'
+alias dc1-nfs-prd-001='ssh matt-goggin@198.101.135.45'
+alias dc1-mysql-prd-001='ssh matt-goggin@198.101.135.47'
+alias dc1-myqueue-prd-001='ssh matt-goggin@198.101.135.46'
+alias dc1-myqueue-prd-002='ssh matt-goggin@198.101.135.164'
+alias dc1-proxy-prd-001='ssh matt-goggin@198.101.135.165'
+alias dc1-proxy-prd-002='ssh matt-goggin@198.101.135.166'
+alias dc1-web-dev-001='ssh matt-goggin@198.101.135.167'
+
+export PATH=$PATH:"/Users/goggin/pear/bin"
+
 [[ -s "~/.rvm/scripts/rvm" ]] && source "~/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*
+
+
