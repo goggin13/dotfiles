@@ -161,6 +161,12 @@ Commands that I want to write down because I'm always looking them up anyways
 ## Memcache
 * `echo stats | nc 127.0.0.1 11211`
 
+## Postgres
+* Edit conf file  
+  * `sudo su - postgres`  
+  * `sudo vi /Library/PostgresPlus/<version>SS/data/pg_hba.conf`  
+
+
 ## Vi  
 * global search and replace  
   * `:%s/search_string/replacement_string/g`  
