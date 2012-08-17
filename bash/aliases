@@ -6,6 +6,7 @@ alias sag="sudo apachectl graceful"
 alias flush_logs="cd $BNTER && rm -f log/*.log"
 alias m="mate ."
 alias ssh="$DOTFILES/colorssh.sh"
+alias start_mongod="mongod run --config /usr/local/etc/mongod.conf"
 
 export CLICOLOR=1
 export LSCOLORS=gxBxhxDxfxhxhxhxhxcxcx
