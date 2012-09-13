@@ -34,6 +34,7 @@ alias pr="cd $PROJECTS"
 alias dot="cd $DOTFILES"
 
 alias dotm="cd $DOTFILES && m"
+alias todo="vi ~/Documents/todo.txt"
 
 alias h="history"
 alias o="open ."
@@ -101,6 +102,32 @@ function merge_staging () {
 
 function gd () {
 	git diff $1
+}
+
+function gpush () {
+  if [ "$#" -eq 0 ]; then
+  	echo "git push origin master"
+  	git push origin master
+  elif [ "$#" -eq 1 ]; then
+  	echo "git push origin $1"
+  	git push origin $1
+  elif [ "$#" -eq 2 ]; then
+    echo "git push $1 $2"
+    git push $1 $2
+  fi
+}
+
+function gpull () {
+  if [ "$#" -eq 0 ]; then
+  	echo "git pull origin master"
+  	git pull origin master
+  elif [ "$#" -eq 1 ]; then
+  	echo "git pull origin $1"
+  	git pull origin $1
+  elif [ "$#" -eq 2 ]; then
+    echo "git pull $1 $2"
+    git pull $1 $2
+  fi
 }
 
 function take {
