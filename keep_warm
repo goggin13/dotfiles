@@ -1,0 +1,7 @@
+
+curl demo-scheduler.herokuapp.com
+curl agavatime.com
+curl statlertime.com
+curl matt-goggin.herokuapp.com
+
+echo `date` >> /Users/goggin/Desktop/keep_warm.log
