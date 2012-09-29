@@ -95,6 +95,8 @@ Commands that I want to write down because I'm always looking them up anyways
   * `grep -B 5 "likes"`  # just the 5 lines before the match  
 * sed modify in place  
   * `sed -i '' -e "s/\(line\)/#\1/g"  file.txt`  
+* tar and gzip directory  
+  * `tar -cvzf p1.tar.gz p1/*.jpeg`  
 
 ## MySQL
 * run a script against a DB
