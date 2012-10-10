@@ -77,6 +77,9 @@ Commands that I want to write down because I'm always looking them up anyways
   * `git log -s'.round_border'`  
 * view contents of git stash  
   * `git stash show -p stash@{0}`  
+* create a tag  
+  * `git tag -a v2 -m "p2 submission"`  
+  * `git push origin master --tags`  push tags  
 
 ## Files
 * download from remote server
