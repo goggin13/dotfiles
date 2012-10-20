@@ -80,6 +80,8 @@ Commands that I want to write down because I'm always looking them up anyways
 * create a tag  
   * `git tag -a v2 -m "p2 submission"`  
   * `git push origin master --tags`  push tags  
+* ignore chmod changes  
+  * `git config core.filemode false`  
 
 ## Files
 * download from remote server
