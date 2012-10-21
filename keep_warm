@@ -1,10 +1,11 @@
 
 # crontab -e
-# */50 * * * * /Users/bin/dotfiles/keep_warm
+# */10 * * * * /Users/goggin/desktop/keep_warm
 
 curl demo-scheduler.herokuapp.com
 curl agavatime.com
 curl statlertime.com
 curl matt-goggin.herokuapp.com
+curl matt-goggin.herokuapp.com/posts
 
-echo `date` >> /Users/bin/dotfiles/keep_warm.log
+echo `date` >> /Users/goggin/desktop/keep_warm.log

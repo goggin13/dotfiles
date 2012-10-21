@@ -7,7 +7,8 @@ alias flush_logs="cd $BNTER && rm -f log/*.log"
 alias m="mate ."
 alias ssh="$DOTFILES/colorssh.sh"
 alias start_mongod="mongod run --config /usr/local/etc/mongod.conf"
-
+alias backup="cd /Users/goggin/projects/ruby/s3backup && ruby backup.rb --todo && ruby backup.rb --backup && cd -"
+alias s3cmd="/Users/goggin/tools/s3/s3cmd"
 export CLICOLOR=1
 export LSCOLORS=gxBxhxDxfxhxhxhxhxcxcx
 
@@ -26,6 +27,7 @@ alias min_fchat="python $FCHAT/pyagg/pyagg.py $FCHAT/tests/pyagg.js"
 # Navigation
 alias ..="cd .."
 alias bnter="cd $BNTER"
+alias meng="cd $MENG"
 alias statler="cd $STATLER"
 alias fchat="cd $FCHAT"
 alias blog="cd $BLOG"
@@ -34,7 +36,7 @@ alias pr="cd $PROJECTS"
 alias dot="cd $DOTFILES"
 
 alias dotm="cd $DOTFILES && m"
-alias todo="vi ~/Documents/todo.txt"
+alias todo="vi ~/Documents/.todo.txt"
 
 alias h="history"
 alias o="open ."
@@ -112,6 +114,21 @@ function gpush () {
   	echo "git push origin $1"
   	git push origin $1
   elif [ "$#" -eq 2 ]; then
+    echo "git push $1 $2"
+    git push $1 $2
+  fi
+}
+
+function gpusham () {
+  echo 'git commit -am "$1"'
+  git commit -am "$1"
+  if [ "$#" -eq 1 ]; then
+  	echo "git push origin master"
+  	git push origin master
+  elif [ "$#" -eq 2 ]; then
+  	echo "git push origin $1"
+  	git push origin $1
+  elif [ "$#" -eq 3 ]; then
     echo "git push $1 $2"
     git push $1 $2
   fi

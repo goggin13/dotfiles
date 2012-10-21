@@ -5,3 +5,4 @@ export BNTER=$PROJECTS/rails/banters
 export STATLER=$PROJECTS/rails/statler
 export BLOG=$PROJECTS/ocaml/home/
 export DOTFILES=~/bin/dotfiles
+export MENG=~/meng
