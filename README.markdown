@@ -77,6 +77,11 @@ Commands that I want to write down because I'm always looking them up anyways
   * `git log -s'.round_border'`  
 * view contents of git stash  
   * `git stash show -p stash@{0}`  
+* create a tag  
+  * `git tag -a v2 -m "p2 submission"`  
+  * `git push origin master --tags`  push tags  
+* ignore chmod changes  
+  * `git config core.filemode false`  
 
 ## Files
 * download from remote server
@@ -95,6 +100,11 @@ Commands that I want to write down because I'm always looking them up anyways
   * `grep -B 5 "likes"`  # just the 5 lines before the match  
 * sed modify in place  
   * `sed -i '' -e "s/\(line\)/#\1/g"  file.txt`  
+* tar and gzip directory  
+  * `tar -cvzf p1.tar.gz p1/*.jpeg`  
+* gzip to a new file  
+  * `gzip --stdout textfile > /path/to/spacious/filesystem/textfile.gz`  
+
 
 ## MySQL
 * run a script against a DB
