@@ -185,7 +185,8 @@ Commands that I want to write down because I'm always looking them up anyways
 * Edit conf file  
   * `sudo su - postgres`  
   * `sudo vi /Library/PostgresPlus/<version>SS/data/pg_hba.conf`  
-
+* rows older than...  
+  * `DELETE FROM radacct WHERE acctstoptime < (now() - '30 days'::interval);`  
 
 ## Vi  
 * global search and replace  
