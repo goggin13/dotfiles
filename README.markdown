@@ -199,6 +199,11 @@ Commands that I want to write down because I'm always looking them up anyways
 *  start  
   * `/etc/init.d/haproxy start`  
 
+## Heroku  
+* push pull local and remote database  
+  * `heroku db:pull`  
+  * `heroku db:push`  
+
 ## Used to set up this environment
   * `mkdir ~/bin; cd ~/bin`
   * `git clone git@github.com:goggin13/dotfiles.git`
