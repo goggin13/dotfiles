@@ -104,7 +104,8 @@ Commands that I want to write down because I'm always looking them up anyways
   * `tar -cvzf p1.tar.gz p1/*.jpeg`  
 * gzip to a new file  
   * `gzip --stdout textfile > /path/to/spacious/filesystem/textfile.gz`  
-
+* unzip a .zip file  
+  *  `unzip file.zip -d destination_folder`   
 
 ## MySQL
 * run a script against a DB
@@ -185,7 +186,10 @@ Commands that I want to write down because I'm always looking them up anyways
 * Edit conf file  
   * `sudo su - postgres`  
   * `sudo vi /Library/PostgresPlus/<version>SS/data/pg_hba.conf`  
-
+* rows older than...  
+  * `DELETE FROM radacct WHERE acctstoptime < (now() - '30 days'::interval);`  
+* show tables  
+  * `SELECT * FROM pg_catalog.pg_tables`    
 
 ## Vi  
 * global search and replace  
@@ -194,6 +198,11 @@ Commands that I want to write down because I'm always looking them up anyways
 ## haproxy  
 *  start  
   * `/etc/init.d/haproxy start`  
+
+## Heroku  
+* push pull local and remote database  
+  * `heroku db:pull`  
+  * `heroku db:push`  
 
 ## Used to set up this environment
   * `mkdir ~/bin; cd ~/bin`
