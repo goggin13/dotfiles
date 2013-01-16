@@ -22,6 +22,8 @@ alias tp="bundle exec rake db:test:prepare"
 alias cuc="bundle exec cucumber -p build"
 alias deploy="ruby ~/bin/dotfiles/ey_deploy.rb"
 alias ec2_testers="ruby $BNTER/test/test_harness/testbot_cloud/cli.rb"
+alias bi="bundle install"
+alias bb="bundle"
 
 # Minify 
 alias min_fchat="python $FCHAT/pyagg/pyagg.py $FCHAT/tests/pyagg.js"
@@ -40,6 +42,8 @@ alias pr="cd $PROJECTS"
 alias dot="cd $DOTFILES"
 
 alias dotm="cd $DOTFILES && m"
+alias dotv="cd $DOTFILES && vim ."
+alias setup="vim $DOTFILES/setup"
 alias todo="vi ~/Documents/.todo.txt"
 
 alias h="history"
