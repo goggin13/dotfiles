@@ -106,6 +106,8 @@ Commands that I want to write down because I'm always looking them up anyways
   * `gzip --stdout textfile > /path/to/spacious/filesystem/textfile.gz`  
 * unzip a .zip file  
   *  `unzip file.zip -d destination_folder`   
+* grep for a string in a dir  
+  * `grep -nr string my_directory`  
 
 ## MySQL
 * run a script against a DB
