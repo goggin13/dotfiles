@@ -11,6 +11,7 @@ alias backup="cd /Users/goggin/projects/ruby/s3backup && ruby backup.rb --todo &
 alias s3cmd="/Users/goggin/tools/s3/s3cmd"
 export CLICOLOR=1
 export LSCOLORS=gxBxhxDxfxhxhxhxhxcxcx
+export utorrent="utserver -settingspath /opt/utorrent-server-v3_0/"
 
 # Memcache
 alias memstats="echo stats | nc 127.0.0.1 11211"
@@ -48,7 +49,7 @@ alias cf="ls -l | awk '!/^d/{print }' | wc -l"
 
 # Alias management
 alias reload="source ~/.bashrc"
-alias pushdot="dot; sudo git add -A; sudo git commit -m 'update dotfiles'; sudo git pull origin master; sudo git push origin master"
+alias pushdot="dot; git add -A; git commit -m 'update dotfiles'; git pull origin master; git push origin master"
 
 # Processes
 alias tu='top -o cpu' # cpu
