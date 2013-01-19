@@ -11,7 +11,7 @@ alias backup="cd /Users/goggin/projects/ruby/s3backup && ruby backup.rb --todo &
 alias s3cmd="/Users/goggin/tools/s3/s3cmd"
 export CLICOLOR=1
 export LSCOLORS=gxBxhxDxfxhxhxhxhxcxcx
-export utorrent="utserver -settingspath /opt/utorrent-server-v3_0/"
+alias utorrent="utserver -settingspath /opt/utorrent-server-v3_0/"
 
 # Memcache
 alias memstats="echo stats | nc 127.0.0.1 11211"

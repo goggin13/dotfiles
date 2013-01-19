@@ -190,6 +190,8 @@ Commands that I want to write down because I'm always looking them up anyways
   * `DELETE FROM radacct WHERE acctstoptime < (now() - '30 days'::interval);`  
 * show tables  
   * `SELECT * FROM pg_catalog.pg_tables`    
+* list databases  
+  * `\list`  
 
 ## Vi  
 * global search and replace  
