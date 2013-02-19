@@ -11,3 +11,18 @@ sudo apt-get install python-software-properties
 sudo add-apt-repository ppa:chris-lea/node.js
 sudo apt-get update
 sudo apt-get install nodejs npm
+
+# Java
+sudo apt-get purge openjdk*
+sudo add-apt-repository ppa:webupd8team/java
+sudo apt-get update
+sudo apt-get install oracle-java7-installer
+
+# Memcache
+sudo apt-get install memcached
+
+# ImageMagick
+sudo apt-get install imagemagick
+
+# Coffeescript
+sudo apt-get install coffeescript

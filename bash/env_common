@@ -12,3 +12,6 @@ export DOTFILES=~/bin/dotfiles
 export MENG=~/meng
 export HYPER=$PROJECTS/rails/hyper_mapper
 export CURAILS=$PROJECTS/rails/curails
+
+export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/usr/local/lib:/usr/local/lib/python2.7/dist-packages:/usr/local/libexec/hyperdex-1.0.dev
+export RUBYLIB=~/projects/hyper/HyperDex/client/ruby/.libs
