@@ -9,9 +9,11 @@ alias ssh="$DOTFILES/colorssh.sh"
 alias start_mongod="mongod run --config /usr/local/etc/mongod.conf"
 alias backup="cd /Users/goggin/projects/ruby/s3backup && ruby backup.rb --todo && ruby backup.rb --backup && cd -"
 alias s3cmd="/Users/goggin/tools/s3/s3cmd"
+alias mvim="$DOTFILES/mvim"
 export CLICOLOR=1
 export LSCOLORS=gxBxhxDxfxhxhxhxhxcxcx
 export utorrent="utserver -settingspath /opt/utorrent-server-v3_0/"
+
 
 # Memcache
 alias memstats="echo stats | nc 127.0.0.1 11211"
@@ -42,6 +44,8 @@ alias pencere="cd $PENCERE"
 alias projects="cd $PROJECTS"
 alias pr="cd $PROJECTS"
 alias dot="cd $DOTFILES"
+alias hyper="cd $HYPER"
+alias curails="cd $CURAILS"
 
 alias dotm="cd $DOTFILES && m"
 alias dotv="cd $DOTFILES && vim ."
