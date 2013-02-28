@@ -108,6 +108,8 @@ Commands that I want to write down because I'm always looking them up anyways
   *  `unzip file.zip -d destination_folder`   
 * grep for a string in a dir  
   * `grep -nr string my_directory`  
+* grep again?  
+  * `grep -r -i somethingtosearchfor`   
 
 ## MySQL
 * run a script against a DB
