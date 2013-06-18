@@ -50,7 +50,6 @@ alias curails="cd $CURAILS"
 alias dotm="cd $DOTFILES && m"
 alias dotv="cd $DOTFILES && vim ."
 alias setup="vim $DOTFILES/setup"
-alias todo="vi ~/Documents/.todo.txt"
 
 alias h="history"
 alias o="open ."
@@ -75,6 +74,15 @@ function cff () {
   # cd $1
   cf
   # cd -
+}
+
+function todo () {
+  cd ~/bin/dotfiles/todo
+  git pull origin master
+  vi todo.txt
+  git commit -am "updated"
+  git push origin master
+  cd -
 }
 
 function cmp () {
@@ -125,8 +133,13 @@ function gpush () {
   	echo "git push origin master"
   	git push origin master
   elif [ "$#" -eq 1 ]; then
-  	echo "git push origin $1"
-  	git push origin $1
+    if [ "$1" = "h" ]; then
+      echo "git push heroku master"
+      git push heroku master
+    else
+      echo "git push origin $1"
+      git push origin $1
+    fi
   elif [ "$#" -eq 2 ]; then
     echo "git push $1 $2"
     git push $1 $2
@@ -137,14 +150,19 @@ function gpusham () {
   echo 'git commit -am "$1"'
   git commit -am "$1"
   if [ "$#" -eq 1 ]; then
-  	echo "git push origin master"
-  	git push origin master
+    echo "git push origin master"
+    git push origin master
   elif [ "$#" -eq 2 ]; then
-  	echo "git push origin $1"
-  	git push origin $1
+    if [ "$2" = "h" ]; then
+      echo "git push heroku master"
+      git push heroku master
+    else
+      echo "git push origin $2"
+      git push origin $2
+    fi
   elif [ "$#" -eq 3 ]; then
-    echo "git push $1 $2"
-    git push $1 $2
+    echo "git push $2 $3"
+    git push $2 $3
   fi
 }
 

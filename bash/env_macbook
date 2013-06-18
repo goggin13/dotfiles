@@ -8,6 +8,7 @@ alias mysqlimport=/usr/local/mysqlimport
 
 export PATH=$PATH:"/Users/goggin/pear/bin"
 
-[[ -s "~/.rvm/scripts/rvm" ]] && source "~/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*
-
+export HADOOP_HOME=/usr/local/Cellar/hadoop/1.1.2
+export JAVA_HOME=$(/usr/libexec/java_home)
+export PATH=$PATH:$HADOOP_HOME/bin
 

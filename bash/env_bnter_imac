@@ -14,5 +14,4 @@ alias mysqladmin=/usr/local/mysql/bin/mysqladmin
 alias mysqldump=/usr/local/mysql/bin/mysqldump
 alias mysqlimport=/usr/local/mysql/bin/mysqlimport
 
-. /etc/profile.d/rvm.sh
 EVENT_NOKQUEUE=yes
