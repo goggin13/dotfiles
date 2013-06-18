@@ -19,6 +19,8 @@ Commands that I want to write down because I'm always looking them up anyways
 * `strace` to view messages from a particular process id.  Useful if `top` is displaying exepensive processes that you want to debug.  
   * `sudo strace -p PID`    
   * [presentation](http://www.scribd.com/doc/31915761/Ruby-Debugging-at-Unix) using this to debug ruby apps  
+* see free memory  
+  * `watch -n 5 free -m`  
 
 
 ## Git
@@ -108,6 +110,8 @@ Commands that I want to write down because I'm always looking them up anyways
   *  `unzip file.zip -d destination_folder`   
 * grep for a string in a dir  
   * `grep -nr string my_directory`  
+* grep again?  
+  * `grep -r -i somethingtosearchfor`   
 
 ## MySQL
 * run a script against a DB

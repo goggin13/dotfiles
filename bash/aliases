@@ -14,7 +14,6 @@ export CLICOLOR=1
 export LSCOLORS=gxBxhxDxfxhxhxhxhxcxcx
 alias utorrent="utserver -settingspath /opt/utorrent-server-v3_0/"
 
-
 # Memcache
 alias memstats="echo stats | nc 127.0.0.1 11211"
 alias start_memcache="memcached -d -m 24 -p 11211"
