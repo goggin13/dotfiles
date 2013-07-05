@@ -1,4 +1,3 @@
-
 # Applications
 alias clojure="java -cp /Users/mattgoggin/Library/Clojure/clojure.jar clojure.main"
 alias js="java -cp /Users/goggin/Documents/CS/rhino/js.jar:/Users/goggin/Documents/CS/rhino/jline.jar jline.ConsoleRunner org.mozilla.javascript.tools.shell.Main -opt -1"
@@ -68,6 +67,12 @@ alias g='clear; git status'
 alias b='clear; echo ====== BRANCHES ======; git branch'
 alias gaa='git add -A'
 alias wipeout="git reset --hard HEAD; git pull"
+
+# Rails
+function rails_new () {
+ rails new $1 --skip-bundle --database=postgresql --skip-test-unit --skip-index-html
+ cd $1
+}
 
 function cff () {
   # cd $1
