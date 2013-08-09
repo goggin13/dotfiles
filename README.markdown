@@ -212,6 +212,10 @@ Commands that I want to write down because I'm always looking them up anyways
   * `heroku db:pull`  
   * `heroku db:push`  
 
+## Rails
+  * rails new myapp --skip-bundle --database=postgresql --skip-test-unit --skip-index-html  
+
+
 ## Used to set up this environment
   * `mkdir ~/bin; cd ~/bin`
   * `git clone git@github.com:goggin13/dotfiles.git`
