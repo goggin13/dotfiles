@@ -78,7 +78,9 @@ function cff () {
 function todo () {
   cd ~/bin/dotfiles/todo
   git pull origin master
+  openssl des3 -d -in todo.txt.enc -out todo.txt -pass pass:todo
   vi todo.txt
+  openssl des3 -in todo.txt -out todo.txt.enc -pass pass:todo
   git commit -am "updated"
   git push origin master
   cd -
