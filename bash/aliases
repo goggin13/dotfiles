@@ -1,53 +1,19 @@
-# Applications
-alias clojure="java -cp /Users/mattgoggin/Library/Clojure/clojure.jar clojure.main"
-alias js="java -cp /Users/goggin/Documents/CS/rhino/js.jar:/Users/goggin/Documents/CS/rhino/jline.jar jline.ConsoleRunner org.mozilla.javascript.tools.shell.Main -opt -1"
-alias sag="sudo apachectl graceful"
-alias flush_logs="cd $BNTER && rm -f log/*.log"
-alias m="mate ."
-#alias ssh="$DOTFILES/colorssh.sh"
-alias start_mongod="mongod run --config /usr/local/etc/mongod.conf"
+# alias ssh="$DOTFILES/colorssh.sh"
 alias backup="cd /Users/goggin/projects/ruby/s3backup && ruby backup.rb --todo && ruby backup.rb --backup && cd -"
-alias s3cmd="/Users/goggin/tools/s3/s3cmd"
-alias mvim="$DOTFILES/mvim"
 export CLICOLOR=1
 export LSCOLORS=gxBxhxDxfxhxhxhxhxcxcx
-alias utorrent="utserver -settingspath /opt/utorrent-server-v3_0/"
-
-# Memcache
-alias memstats="echo stats | nc 127.0.0.1 11211"
-alias start_memcache="memcached -d -m 24 -p 11211"
 
 # Rails
 alias tp="bundle exec rake db:test:prepare"
-alias cuc="bundle exec cucumber -p build"
-alias rc="rails c"
-alias rs="rails s"
-alias deploy="ruby ~/bin/dotfiles/ey_deploy.rb"
-alias ec2_testers="ruby $BNTER/test/test_harness/testbot_cloud/cli.rb"
-alias bi="bundle install"
+alias sc="bundle exec rails c"
+alias ss="bundle exec rails s"
 alias bb="bundle"
-
-# Minify 
-alias min_fchat="python $FCHAT/pyagg/pyagg.py $FCHAT/tests/pyagg.js"
 
 # Navigation
 alias ..="cd .."
-alias bnter="cd $BNTER"
-alias meng="cd $MENG"
-alias statler="cd $STATLER"
-alias fchat="cd $FCHAT"
-alias blog="cd $BLOG"
-alias levo="cd $LEVO"
-alias pencere="cd $PENCERE"
 alias projects="cd $PROJECTS"
 alias pr="cd $PROJECTS"
 alias dot="cd $DOTFILES"
-alias hyper="cd $HYPER"
-alias curails="cd $CURAILS"
-
-alias dotm="cd $DOTFILES && m"
-alias dotv="cd $DOTFILES && vim ."
-alias setup="vim $DOTFILES/setup"
 
 alias h="history"
 alias o="open ."
@@ -58,26 +24,14 @@ alias cf="ls -l | awk '!/^d/{print }' | wc -l"
 alias reload="source ~/.bashrc"
 alias pushdot="dot; git add -A; git commit -m 'update dotfiles'; git pull origin master; git push origin master"
 
-# Processes
-alias tu='top -o cpu' # cpu
-alias tm='top -o vsize' # memory
-
 # Git
 alias g='clear; git status'
-alias b='clear; echo ====== BRANCHES ======; git branch'
-alias gaa='git add -A'
-alias wipeout="git reset --hard HEAD; git pull"
+alias b='clear; git branch'
 
 # Rails
 function rails_new () {
  rails new $1 --skip-bundle --database=postgresql --skip-test-unit --skip-index-html
  cd $1
-}
-
-function cff () {
-  # cd $1
-  cf
-  # cd -
 }
 
 function todo () {
@@ -91,16 +45,6 @@ function todo () {
   cd -
 }
 
-function cmp () {
-	if [ "$#" -eq 1 ]; then
-		echo "compare staging and $1"
-		echo "https://github.com/patrickmoberg/bnter_rails/pull/new/patrickmoberg:staging...$1" | pbcopy
-	elif [ "$#" -eq 2 ]; then
-		echo "compare $1 and $2"
-		echo "https://github.com/patrickmoberg/bnter_rails/pull/new/patrickmoberg:$1...$2" | pbcopy
-	fi
-}
-
 function routes () {
 	if [ "$#" -eq 0 ]; then
 		echo "bundle exec rake routes"
@@ -111,80 +55,6 @@ function routes () {
 	fi
 }
 
-function pd () {
-	pushd $1
-}
-
-function co () {
-  git checkout $1
-}
-
-function gm () {
-  git merge $1
-}
-
-function merge_staging () {
-  co staging
-  git pull origin staging
-  co $1
-  git merge staging
-}
-
-function gd () {
-	git diff $1
-}
-
-function gpush () {
-  if [ "$#" -eq 0 ]; then
-  	echo "git push origin master"
-  	git push origin master
-  elif [ "$#" -eq 1 ]; then
-    if [ "$1" = "h" ]; then
-      echo "git push heroku master"
-      git push heroku master
-    else
-      echo "git push origin $1"
-      git push origin $1
-    fi
-  elif [ "$#" -eq 2 ]; then
-    echo "git push $1 $2"
-    git push $1 $2
-  fi
-}
-
-function gpusham () {
-  echo 'git commit -am "$1"'
-  git commit -am "$1"
-  if [ "$#" -eq 1 ]; then
-    echo "git push origin master"
-    git push origin master
-  elif [ "$#" -eq 2 ]; then
-    if [ "$2" = "h" ]; then
-      echo "git push heroku master"
-      git push heroku master
-    else
-      echo "git push origin $2"
-      git push origin $2
-    fi
-  elif [ "$#" -eq 3 ]; then
-    echo "git push $2 $3"
-    git push $2 $3
-  fi
-}
-
-function gpull () {
-  if [ "$#" -eq 0 ]; then
-  	echo "git pull origin master"
-  	git pull origin master
-  elif [ "$#" -eq 1 ]; then
-  	echo "git pull origin $1"
-  	git pull origin $1
-  elif [ "$#" -eq 2 ]; then
-    echo "git pull $1 $2"
-    git pull $1 $2
-  fi
-}
-
 function take {
 	mkdir $1
 	cd $1
@@ -192,10 +62,6 @@ function take {
 
 function be () {
 	bundle exec $1 $2 $3 $4 $5
-}
-
-function grep_routes () {
-	bundle exec rake routes | grep $1
 }
 
 function ber () {
