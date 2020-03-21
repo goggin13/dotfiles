@@ -23,3 +23,7 @@ function rails_new () {
  rails new $1 --skip-bundle --database=postgresql --skip-test-unit --skip-index-html
  cd $1
 }
+
+function docker-start () {
+  bash --login '/Applications/Docker/Docker Quickstart Terminal.app/Contents/Resources/Scripts/start.sh'
+}
