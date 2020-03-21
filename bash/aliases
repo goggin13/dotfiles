@@ -27,3 +27,5 @@ function rails_new () {
 function docker-start () {
   bash --login '/Applications/Docker/Docker Quickstart Terminal.app/Contents/Resources/Scripts/start.sh'
 }
+
+alias docker-ip="docker-machine ip default"
