@@ -223,6 +223,3 @@ Commands that I want to write down because I'm always looking them up anyways
   * in ~/.bash_profile
     * `if [ -f ~/.bashrc ]; then . ~/.bashrc fi`
   * `ln -s ~/bin/dotfiles/ssh/config ~/.ssh/config`
-  * download vcprompt
-    * `curl -sL https://github.com/djl/vcprompt/raw/master/bin/vcprompt > ~/bin/vcprompt`
-    * `chmod 755 ~/bin/vcprompt`

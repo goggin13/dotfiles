@@ -42,7 +42,6 @@ BWHITE='\e[47m'
 # Update the command prompt to be <user>:<current_directory>(git_branch) >
 # Note that the git branch is given a special color
 # to add back user -> put  "\u:" at front
-PS1="\w \[$MAGENTA\]\$(vcprompt)\[$NO_COLOR\] \n\[$EYELLOW\];-)\[$NO_COLOR\] "
-
+PS1="$ "
 
 export TERM=xterm-256color

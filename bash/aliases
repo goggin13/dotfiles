@@ -1,13 +1,4 @@
-# alias ssh="$DOTFILES/colorssh.sh"
-alias backup="cd /Users/goggin/projects/ruby/s3backup && ruby backup.rb --todo && ruby backup.rb --backup && cd -"
 export CLICOLOR=1
-export LSCOLORS=gxBxhxDxfxhxhxhxhxcxcx
-
-# Rails
-alias tp="bundle exec rake db:test:prepare"
-alias sc="bundle exec rails c"
-alias ss="bundle exec rails s"
-alias bb="bundle"
 
 # Navigation
 alias ..="cd .."
@@ -22,7 +13,6 @@ alias cf="ls -l | awk '!/^d/{print }' | wc -l"
 
 # Alias management
 alias reload="source ~/.bashrc"
-alias pushdot="dot; git add -A; git commit -m 'update dotfiles'; git pull origin master; git push origin master"
 
 # Git
 alias g='clear; git status'
@@ -32,57 +22,4 @@ alias b='clear; git branch'
 function rails_new () {
  rails new $1 --skip-bundle --database=postgresql --skip-test-unit --skip-index-html
  cd $1
-}
-
-function todo () {
-  cd ~/bin/dotfiles/todo
-  git pull origin master
-  openssl des3 -d -in todo.txt.enc -out todo.txt -pass pass:todo
-  vi todo.txt
-  openssl des3 -in todo.txt -out todo.txt.enc -pass pass:todo
-  git commit -am "updated"
-  git push origin master
-  cd -
-}
-
-function routes () {
-	if [ "$#" -eq 0 ]; then
-		echo "bundle exec rake routes"
-		bundle exec rake routes
-	else
-		echo "bundle exec rake routes | grep $1"
-		bundle exec rake routes | grep $1
-	fi
-}
-
-function take {
-	mkdir $1
-	cd $1
-}
-
-function be () {
-	bundle exec $1 $2 $3 $4 $5
-}
-
-function ber () {
-	if [ "$#" -eq 0 ]; then
-		echo "bundle exec rspec"
-		bundle exec rspec
-	elif [ "$#" -eq 1 ]; then
-		echo "bundle exec rspec $1"
-		bundle exec rspec $1
-	elif [ "$#" -eq 2 ]; then
-	  if [ "$2" = "ff" ]; then
-  	  echo "bundle exec rspec $1 --fail-fast"
-  		bundle exec rspec $1 --fail-fast
-	  else
-  	  echo "bundle exec rspec $1 -e \"$2\""
-  		bundle exec rspec $1 -e "$2"	    
-	  fi
-	fi		
-}
-
-function r () {
-	echo "bundle exec rake $1"
-	bundle exec rake $1
 }

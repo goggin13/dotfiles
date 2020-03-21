@@ -1,17 +1,4 @@
-
 export PATH=$PATH:~/bin
 export PATH=$PATH:~/bin/dotfiles
 export PATH=$PATH:~/bin/aws
 export PROJECTS=~/projects
-export BNTER=$PROJECTS/rails/banters
-export STATLER=$PROJECTS/rails/statler
-export LEVO=$PROJECTS/rails/levo
-export PENCERE=$PROJECTS/rails/red_pencere
-export BLOG=$PROJECTS/ocaml/home/
-export DOTFILES=~/bin/dotfiles
-export MENG=~/meng
-export HYPER=$PROJECTS/rails/hyper_mapper
-export CURAILS=$PROJECTS/rails/curails
-
-export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/usr/local/lib:/usr/local/lib/python2.7/dist-packages:/usr/local/libexec/hyperdex-1.0.dev
-# export RUBYLIB=~/projects/hyper/HyperDex/client/ruby/.libs
