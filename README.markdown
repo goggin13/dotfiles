@@ -224,11 +224,3 @@ Commands that I want to write down because I'm always looking them up anyways
     * `if [ -f ~/.bashrc ]; then . ~/.bashrc fi`
   * `ln -s ~/bin/dotfiles/ssh/config ~/.ssh/config`
 
-## New Computer
-* Chrome - sign in
-* 1password 
-* [Spotify](https://www.spotify.com/us/download/other/).
-* Smart Card Utility from app store
-* [DOD certs](https://militarycac.com/macnotes.htm)
-* [Anki](https://apps.ankiweb.net/)
-* Anki
