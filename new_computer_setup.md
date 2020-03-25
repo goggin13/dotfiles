@@ -14,4 +14,5 @@
 * [Braintree vim dotfiles](https://github.com/braintreeps/vim_dotfiles)
 * Homebrew
 * tmux
-* `cp .tmux.conf ~/.tmux.conf`
+* `ln -s /Users/mattgoggin/Documents/projects/dotfiles/.gitconfig ~/.gitconfig`
+* `ln -s /Users/mattgoggin/Documents/projects/dotfiles/.tmux.conf ~/.tmux.conf`
