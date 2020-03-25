@@ -10,3 +10,8 @@
   * Image Occlusion Anki 2.1 Code: 1374772155
   * Load Balancer Anki 2.1 Code: 1417170896
   * Frozen Fields Anki 2.1 Code: 516643804
+* [Docker Community](https://hub.docker.com/editions/community/docker-ce-desktop-mac/)
+* [Braintree vim dotfiles](https://github.com/braintreeps/vim_dotfiles)
+* Homebrew
+* tmux
+* `cp .tmux.conf ~/.tmux.conf`
