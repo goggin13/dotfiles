@@ -83,7 +83,9 @@ Commands that I want to write down because I'm always looking them up anyways
   * `git tag -a v2 -m "p2 submission"`  
   * `git push origin master --tags`  push tags  
 * ignore chmod changes  
-  * `git config core.filemode false`  
+  * `git config core.filemode false` 
+ * Find and replace. 
+  * `git grep -l 'original_text' | xargs sed -i '' -e 's/original_text/new_text/g'`. 
 
 ## Files
 * download from remote server
