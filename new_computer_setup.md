@@ -2,6 +2,8 @@
 * Chrome - sign in
 * 1password 
 * [Spotify](https://www.spotify.com/us/download/other/).
+* [DropBox] (https://www.dropbox.com)
+* [WhatsApp] (https://www.whatsapp.com/download)
 * Smart Card Utility from app store
 * [DOD certs](https://militarycac.com/macnotes.htm)
 * [Anki](https://apps.ankiweb.net/)
