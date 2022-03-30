@@ -1,7 +1,7 @@
 # New Computer
 * Chrome - sign in
-* 1password 
-* [Spotify](https://www.spotify.com/us/download/other/).
+* [1password](https://1password.com/)
+* [Spotify](https://www.spotify.com/us/download/other/)
 * [DropBox](https://www.dropbox.com)
 * [WhatsApp](https://www.whatsapp.com/download)
 * Smart Card Utility from app store
