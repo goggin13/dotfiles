@@ -5,7 +5,7 @@
 * [DropBox](https://www.dropbox.com)
 * [WhatsApp](https://www.whatsapp.com/download)
 * [Slack](https://slack.com/downloads/mac)
-* [Printer] (https://123.hp.com/us/en/devices/dj3700ia) 
+* [Printer](https://123.hp.com/us/en/devices/dj3700ia) 
 * HP Easy Scan from Apple App Store
 * [Anki](https://apps.ankiweb.net/)
 * [Anki-addons](https://medshamim.com/med/must-have-anki-add-ons): `(tools->add-ons)`
@@ -19,5 +19,4 @@
 * tmux
 * `ln -s /Users/mattgoggin/Documents/projects/dotfiles/.gitconfig ~/.gitconfig`
 * `ln -s /Users/mattgoggin/Documents/projects/dotfiles/.tmux.conf ~/.tmux.conf`
-* Smart Card Utility from app store
 * [DOD certs](https://militarycac.com/macnotes.htm)
