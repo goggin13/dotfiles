@@ -14,8 +14,8 @@
   * Review Heat Map Anki 2.1 Code: 1771074083
 * [Docker Community](https://hub.docker.com/editions/community/docker-ce-desktop-mac/)
 * [Braintree vim dotfiles](https://github.com/braintreeps/vim_dotfiles)
-* Homebrew
-* tmux
+* [Homebrew](https://brew.sh/)
+* tmux: `brew install tmux`
 * `ln -s /Users/mattgoggin/Documents/projects/dotfiles/.gitconfig ~/.gitconfig`
 * `ln -s /Users/mattgoggin/Documents/projects/dotfiles/.tmux.conf ~/.tmux.conf`
 * [DOD certs](https://militarycac.com/macnotes.htm)
